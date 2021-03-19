@@ -1,0 +1,24 @@
+@import "../../main.scss";
+
+.header-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  list-style: none;
+  margin: 0px;
+}
+
+.header-list__item {
+  font-family: $font-primary;
+  font-weight: 600;
+  font-size: 18px;
+
+  a {
+    padding: 20px 0px;
+    display: inline-block;
+    color: $textColor-primary;
+    text-decoration: none;
+  }
+}
