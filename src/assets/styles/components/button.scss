@@ -1,27 +1,69 @@
-@import '../main.scss';
+@import "../main.scss";
+
+@mixin icon($color) {
+  span {
+    display: flex;
+    align-items: center;
+  }
+  span svg {
+    height: 25px;
+    width: 25px;
+    margin: auto;
+    fill: $color;
+  }
+}
 
 .btn {
   cursor: pointer;
   border-radius: 50px;
   border: none;
+  font-family: $font-primary;
 }
 .btn:focus {
-  outline: none;
+    outline: none;
+  }
+.btn:active{
+    animation: pulse 1s;
 }
 
 .btn-primary {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 10px;
   align-items: center;
   padding: 10px 20px;
   background-color: $bg-alt;
   min-width: 180px;
-
-  span {
-    font-family: $font-primary;
-    color: $textColor-primary;
-    font-weight: bold;
-    font-size: 16px;
-  }
+  color: $textColor-primary;
+  font-weight: bold;
+  font-size: 16px;
+  @include icon($textColor-primary);
 }
+.btn-primary:hover{
+    background-color: rgba($color: $bg-alt, $alpha: 0.8);
+}
+
+.btn-secondary {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  background-color: transparent;
+  font-weight: normal;
+  font-size: 16px;
+  color: $textColor-secondary;
+  @include icon($textColor-secondary);
+}
+.btn-secondary:hover{
+    background-color: rgba($color: $textColor-secondary, $alpha: 0.1);
+}
+
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(0.7);}
+    100% {transform: scale(1);}
+  }
+  
