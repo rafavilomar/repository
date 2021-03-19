@@ -1,0 +1,27 @@
+@import '../main.scss';
+
+.btn {
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+}
+.btn:focus {
+  outline: none;
+}
+
+.btn-primary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: $bg-alt;
+  min-width: 180px;
+
+  span {
+    font-family: $font-primary;
+    color: $textColor-primary;
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
