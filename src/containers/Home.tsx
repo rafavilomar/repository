@@ -3,12 +3,13 @@ import Button from "../components/Button";
 import Header from "../components/layout/Header";
 
 import { Mail } from "react-ionicons/lib";
+import IconButton from "../components/IconButton";
 
 const Home = () => {
   return (
     <>
       <Header />
-      <Button icon={<Mail />} value="Projects" />
+      <IconButton icon={<Mail />} variant='primary'/>
     </>
   );
 };
