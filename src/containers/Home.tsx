@@ -1,8 +1,10 @@
 import React from "react";
-import Header from "../components/layout/Header";
+import '../assets/styles/container/home.scss'
 
+import Header from "../components/layout/Header";
 import ShortButton from "../components/layout/ShortButton";
 import Presentation from "../components/Presentation";
+import Skills from "../components/Skills";
 
 const Home = () => {
   return (
@@ -10,12 +12,9 @@ const Home = () => {
       <Header />
       <ShortButton />
       <Presentation />
-      <p style={{position: 'relative', top: '100vh'}}>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod eaque
-        dolorum minus doloribus mollitia eius repellendus sed. Dolorem earum
-        laudantium laborum dolore, quam, unde corrupti, non voluptate cupiditate
-        quos fugit.
-      </p>
+      <div style={{position: 'relative', top: '100vh'}}>
+        <Skills/>
+      </div>
     </>
   );
 };
