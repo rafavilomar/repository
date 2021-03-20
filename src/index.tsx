@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './assets/styles/main.scss';
+
 import App from './routes/App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+
+import './assets/styles/main.scss';
+import './assets/styles/components/typography.scss'
 
 ReactDOM.render(
   <BrowserRouter>
