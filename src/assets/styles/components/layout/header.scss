@@ -22,11 +22,6 @@
     text-decoration: none;
   }
 }
-.header-list__item:hover {
-  a {
-    color: $bg-alt;
-  }
-}
 
 @media only screen and (min-width: 450px) {
   .header-list {

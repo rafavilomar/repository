@@ -1,0 +1,70 @@
+@import '../main.scss';
+
+.carrousel {
+  overflow-x: scroll;
+  position: relative;
+}
+.carrousel__container {
+  white-space: nowrap;
+  margin: 100px 0px;
+  padding-bottom: 10px;
+}
+.carrousel-item {
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 25px;
+  display: inline-block;
+  transition: 450ms all;
+  transform-origin: center left;
+  position: relative;
+}
+.carrousel-item:hover ~ .carrousel-item {
+  transform: translate3d(100px, 0, 0);
+}
+.carrousel__container:hover .carrousel-item {
+  opacity: 0.3;
+}
+.carrousel__container:hover .carrousel-item:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+.carrousel-item__image {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+.carrousel-item__details {
+  background: linear-gradient(
+    to top,
+    $bg-primary  0%,
+    rgba($bg-primary, 0.3) 100%
+  );
+  font-size: 10px;
+  opacity: 0;
+  transition: 450ms opacity;
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+    gap: 5px;
+
+  div{
+      display: flex;
+      max-width: 100%;
+      gap: 5px;
+  }
+  h5{
+      font-size: 16px;
+  }
+}
+.carrousel-item__details:hover {
+  opacity: 1;
+}
+
