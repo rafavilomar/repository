@@ -14,7 +14,7 @@ const Contacme = () => {
         </p>
         <p className="txt subtitle">Send me a message, let's chat.</p>
       </div>
-      <Button icon={<Mail />} value="Contact me" />
+      <Button icon={<Mail />} title="Contact me" value="Contact me" url='mailto:rafavilomar@gmail.com' externalURL />
     </section>
   );
 };

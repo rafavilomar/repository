@@ -1,22 +1,22 @@
-import React from 'react';
-import IconButton from '../IconButton';
-import '../../assets/styles/components/layout/shortButton.scss'
+import React from "react";
+import IconButton from "../IconButton";
+import "../../assets/styles/components/layout/shortButton.scss";
 
-import {
-    Mail,
-    LogoGithub,
-    Download,
-    LogoLinkedin
-} from 'react-ionicons/lib'
+import { shortButton } from "../../helpers/home";
 
 const ShortButton = () => {
-    return(
-        <section className="shortButton">
-            <IconButton icon={<LogoGithub/>}/>
-            <IconButton icon={<LogoLinkedin/>}/>
-            <IconButton icon={<Mail/>}/>
-            <IconButton icon={<Download/>}/>
-        </section>
-    )
-} 
+  return (
+    <section className="shortButton">
+      {shortButton.map((e) => (
+        <IconButton
+          key={e.title}
+          icon={e.icon}
+          url={e.url}
+          title={e.title}
+          externalURL={e.externalURL}
+        />
+      ))}
+    </section>
+  );
+};
 export default ShortButton;

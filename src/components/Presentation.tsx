@@ -1,11 +1,9 @@
 import React from "react";
 
-import '../assets/styles/components/presentation.scss'
+import "../assets/styles/components/presentation.scss";
 import Button from "./Button";
 
-import {
-    CodeWorking
-} from 'react-ionicons'
+import { secondaryButton } from "../helpers/home";
 
 const Presentation = () => {
   return (
@@ -20,13 +18,21 @@ const Presentation = () => {
           explore my repositories.
         </p>
         <div>
-            <Button value="369labs" icon={<CodeWorking/>} variant='secondary'/>
-            <Button value="369labs" icon={<CodeWorking/>} variant='secondary'/>
-            <Button value="369labs" icon={<CodeWorking/>} variant='secondary'/>
+          {secondaryButton.map((e) => (
+            <Button
+              key={e.title}
+              value={e.value}
+              icon={e.icon}
+              url={e.url}
+              title={e.title}
+              variant="secondary"
+              externalURL={e.externalURL}
+            />
+          ))}
         </div>
       </div>
       <div className="presentation__action">
-          <Button value="Projects" />
+        <Button value="Projects" />
       </div>
     </section>
   );
