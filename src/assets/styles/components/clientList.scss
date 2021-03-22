@@ -1,0 +1,43 @@
+@import "../main.scss";
+
+.clientList {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.clientList__item {
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: $bg-secondary;
+
+  > div > h6 {
+    font-size: 18px;
+  }
+  > div > p {
+    font-size: 16px;
+  }
+  > p {
+    color: $textColor-secondary;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .clientList {
+    min-width: 35vw;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+    .clientList {
+      min-width: 400px;
+      width: 400px;
+    }
+  }

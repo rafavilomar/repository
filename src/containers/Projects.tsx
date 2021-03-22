@@ -19,7 +19,6 @@ const Projects = () => {
           <CardProject />
         ))}
       </section>
-
       <Contacme />
     </>
   );
