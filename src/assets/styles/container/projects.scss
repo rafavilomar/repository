@@ -1,0 +1,17 @@
+@import "../main.scss";
+
+.projects {
+  padding: 90px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+@media only screen and (min-width: 900px) {
+    .projects {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}

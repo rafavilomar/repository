@@ -8,6 +8,11 @@
   padding: 0px;
   list-style: none;
   margin: 0px;
+  z-index: 500;
+  position: fixed;
+  left: 35px;
+  right: 35px;
+  background-color: $bg-primary;
 }
 
 .header-list__item {
@@ -27,6 +32,8 @@
   .header-list {
     justify-content: flex-end;
     gap: 40px;
+    left: 85px;
+    right: 85px;
   }
   .header-list__item {
     font-size: 18px;

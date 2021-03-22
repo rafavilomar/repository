@@ -71,7 +71,7 @@
   justify-content: center;
   align-items: center;
   padding: 8px;
-  background-color: $bg-primary;
+  background-color: transparent;
   box-sizing: border-box;
   @include icon($textColor-primary);
 }
@@ -88,7 +88,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(0.7);
+    transform: scale(0.95);
   }
   100% {
     transform: scale(1);

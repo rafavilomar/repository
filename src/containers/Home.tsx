@@ -1,5 +1,5 @@
 import React from "react";
-import '../assets/styles/container/home.scss'
+import "../assets/styles/container/home.scss";
 import Carousel from "../components/Carousel";
 import Contacme from "../components/layout/Contacme";
 
@@ -9,15 +9,18 @@ import Presentation from "../components/Presentation";
 import Skills from "../components/Skills";
 
 const Home = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Header />
       <ShortButton />
       <Presentation />
-      <div style={{position: 'relative', top: '100vh'}}>
-        <Skills/>
-        <Carousel/>
-        <Contacme/>
+      <div style={{ position: "relative", top: "100vh" }}>
+        <Skills />
+        <Carousel />
+        <Contacme />
       </div>
     </>
   );
