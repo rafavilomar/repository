@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/styles/container/home.scss";
-import Carousel from "../components/Carousel";
+import BigCardProject from "../components/BigCardProject";
 import Contacme from "../components/layout/Contacme";
 
 import Header from "../components/layout/Header";
@@ -19,7 +19,7 @@ const Home = () => {
       <Presentation />
       <div style={{ position: "relative", top: "100vh" }}>
         <Skills />
-        <Carousel />
+        <BigCardProject/>
         <Contacme />
       </div>
     </>
