@@ -24,14 +24,18 @@ const About = () => {
           <h2 className="txt mainTitle-secondary">Rafael Vilomar</h2>
           <h3 className="txt secondaryTitle">Web Developer</h3>
           <p className="txt body">
-            I'm Rafael, a Web Developer and this is my personal corner on the
-            Web City. Here you can find information about me, how contact me and
-            explore my repositories.
+            I live in my hometown Santo Domingo, Dominican Republic, where I am
+            also studying software engineering at UAPA.
           </p>
           <p className="txt body">
-            I'm Rafael, a Web Developer and this is my personal corner on the
-            Web City. Here you can find information about me, how contact me and
-            explore my repositories.
+            I got to know the world of development when I was 14–15 years old,
+            since then my curiosity has led me to learn more and more. At 16, I
+            finished my high school studies as a computer technician and at 18 I
+            finished my studies in ITLA as a Software Developer.
+          </p>
+          <p className="txt body">
+            Lately I have dedicated my time to research about design,
+            prototyping, UI and UX.
           </p>
         </div>
       </section>

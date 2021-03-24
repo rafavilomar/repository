@@ -32,7 +32,7 @@ const Presentation = () => {
         </div>
       </div>
       <div className="presentation__action">
-        <Button value="Projects" />
+        <Button value="Projects" url='/projects' />
       </div>
     </section>
   );
