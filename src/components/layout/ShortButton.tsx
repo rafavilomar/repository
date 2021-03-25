@@ -14,6 +14,7 @@ const ShortButton = () => {
           url={e.url}
           title={e.title}
           externalURL={e.externalURL}
+          style={{height: 45, width: 45}}
         />
       ))}
     </section>

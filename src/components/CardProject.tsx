@@ -1,26 +1,48 @@
 import React from "react";
 import "../assets/styles/components/cardProject.scss";
 
-import { LogoGithub } from "react-ionicons";
+import { project } from "../helpers/projects";
+
+import { LogoDribbble, LogoGithub, Wifi } from "react-ionicons";
 import Button from "./Button";
 import IconButton from "./IconButton";
 
-const CardProject = () => {
+type props = {
+  project: project;
+};
+
+const CardProject: React.FC<props> = ({ project }) => {
   return (
     <article className="cardProject">
       <div className="cardProject__head">
-        <IconButton variant="secondary" icon={<LogoGithub />} />
-        <IconButton variant="secondary" icon={<LogoGithub />} />
+        {project.dribbble && (
+          <IconButton
+            variant="secondary"
+            icon={<LogoDribbble />}
+            externalURL
+            url={project.dribbble}
+          />
+        )}
+        {project.github && (
+          <IconButton
+            variant="secondary"
+            icon={<LogoGithub />}
+            externalURL
+            url={project.github}
+          />
+        )}
       </div>
       <img
         className="cardProject__image"
-        src="https://cdn.dribbble.com/users/3582616/screenshots/14512060/media/973c4ccd1c030405d42f41bb47b7bf2b.png?compress=1&resize=400x300"
+        src={project.previewImg}
         alt="presentation"
       />
-      <h5 className="txt subtitle">Name Project</h5>
+      <h5 className="txt subtitle">{project.name}</h5>
       <div className="cardProject__footer">
-        <IconButton icon={<LogoGithub />} />
-        <Button value="Detalles" />
+        {project.live && (
+          <IconButton icon={<Wifi />} externalURL url={project.live} />
+        )}
+        <Button value="Detalles" url={`/${project.id}`} />
       </div>
     </article>
   );
