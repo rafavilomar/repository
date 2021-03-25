@@ -1,0 +1,47 @@
+@import "../../main.scss";
+
+.header-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  list-style: none;
+  margin: 0px;
+  z-index: 500;
+  position: fixed;
+  left: 35px;
+  right: 35px;
+  background-color: $bg-primary;
+}
+
+.header-list__item {
+  font-family: $font-primary;
+  font-weight: 600;
+  font-size: 16px;
+
+  a {
+    padding: 20px 0px;
+    display: inline-block;
+    color: $textColor-primary;
+    text-decoration: none;
+  }
+}
+
+.header-list__item:hover{
+  a {
+    color: $bg-alt;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .header-list {
+    justify-content: flex-end;
+    gap: 40px;
+    left: 85px;
+    right: 85px;
+  }
+  .header-list__item {
+    font-size: 18px;
+  }
+}

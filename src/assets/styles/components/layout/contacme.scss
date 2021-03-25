@@ -1,0 +1,28 @@
+@import "../../main.scss";
+
+.contacme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 60vh;
+
+  > h3 {
+    display: none;
+  }
+
+  > div {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .contacme {
+    height: 80vh;
+    > h3 {
+      text-align: center;
+      display: inline-block;
+    }
+  }
+}

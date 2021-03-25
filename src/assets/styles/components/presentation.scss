@@ -1,0 +1,44 @@
+@import '../main.scss';
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0px;
+    left: 35px;
+    right: 35px;
+    bottom: 65px;
+    gap: 19px;
+    padding: 20px 0px;
+    margin-top: 65px;
+}
+.presentation__details > div {
+    display: none;
+}
+
+@media only screen and (min-width: 450px){
+    .presentation{
+        left: 85px;
+        right: 85px;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .presentation{
+        justify-content: center;
+    }
+    .presentation__details {
+        display: flex;
+        align-items: center;
+        max-width: 620px;
+        gap: 20px;
+    }
+    .presentation__details > div {
+        display: flex;
+        flex-direction: column;
+    }
+    .presentation__details > p {
+        max-width: 358px;
+    }
+}

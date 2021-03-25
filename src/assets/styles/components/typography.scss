@@ -1,0 +1,61 @@
+@import "../main.scss";
+
+.txt {
+  padding: 0px;
+  margin: 0px;
+}
+.mainTitle-primary {
+  font-family: $font-secondary;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 36px;
+  line-height: auto;
+  color: $textColor-primary;
+}
+.mainTitle-secondary {
+  font-family: $font-secondary;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 36px;
+  line-height: auto;
+  color: $textColor-primary;
+}
+
+.secondaryTitle {
+  font-family: $font-secondary;
+  color: $textColor-secondary;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.subtitle {
+  font-family: $font-primary;
+  color: $textColor-primary;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.body {
+  font-family: $font-primary;
+  color: $textColor-secondary;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  word-spacing: 2px;
+}
+
+@media only screen and (min-width: 450px) {
+  .mainTitle-primary {
+    font-size: 65px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .mainTitle-primary {
+    font-size: 96px;
+  }
+}

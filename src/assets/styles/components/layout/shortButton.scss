@@ -1,0 +1,21 @@
+@import "../../main.scss";
+
+.shortButton {
+  display: none;
+}
+
+@media only screen and (min-width: 450px) {
+  .shortButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: auto;
+    gap: 20px;
+  }
+}
