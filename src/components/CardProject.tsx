@@ -40,7 +40,7 @@ const CardProject: React.FC<props> = ({ project }) => {
       <h5 className="txt subtitle">{project.name}</h5>
       <div className="cardProject__footer">
         {project.live && (
-          <IconButton icon={<Wifi />} externalURL url={project.live} />
+          <IconButton icon={<Wifi />} externalURL url={project.live} ttValue='Live' />
         )}
         <Button value="Detalles" url={`/${project.id}`} />
       </div>

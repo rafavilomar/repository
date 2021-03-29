@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "../assets/styles/components/button.scss";
+import ToolTip, { ttDirection } from "./ToolTip";
 
 type props = {
   variant?: Variant;
@@ -10,6 +11,8 @@ type props = {
   url?: string;
   title?: string;
   externalURL?: boolean;
+  ttValue?: string;
+  ttDirection?: ttDirection
 };
 
 const IconButton: React.FC<props> = ({
@@ -19,6 +22,8 @@ const IconButton: React.FC<props> = ({
   url = "/",
   title,
   externalURL = false,
+  ttValue,
+  ttDirection
 }) => {
   return (
     <>
@@ -31,6 +36,7 @@ const IconButton: React.FC<props> = ({
             style={style}
           >
             {icon}
+            {ttValue && <ToolTip value={ttValue} direction={ttDirection} />}
           </button>
         </Link>
       ) : (
@@ -42,6 +48,7 @@ const IconButton: React.FC<props> = ({
             style={style}
           >
             {icon}
+            {ttValue && <ToolTip value={ttValue} direction={ttDirection} /> }
           </button>
         </a>
       )}

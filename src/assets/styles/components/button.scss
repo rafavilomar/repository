@@ -13,17 +13,87 @@
   }
 }
 
+@mixin arrow($vertical, $horizontal) {
+  content: " ";
+    position: absolute;
+    top: $vertical;
+    left: $horizontal; 
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+
+    @if $horizontal == 100% {
+      border-color: transparent transparent transparent $bg-alt; 
+    } @else if $horizontal == -10px {
+      border-color: transparent $bg-alt transparent transparent ; 
+    } @else if $vertical == 115% {
+      border-color: $bg-alt transparent transparent transparent ; 
+    }@else if $vertical == -15% {
+      border-color: transparent transparent $bg-alt transparent ; 
+    }
+}
 .btn {
   cursor: pointer;
   border-radius: 50px;
   border: none;
   font-family: $font-primary;
+  position: relative;
+  
+
+  .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: $bg-alt;
+    color: $textColor-primary;
+    font-family: $font-primary;
+    font-size: 14px;
+    padding: 5px 5px;
+    border-radius: 6px;
+
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .left {
+    right: 115%;
+  }
+  .left::after {
+    @include arrow(50%, 100% )
+  }
+  .right {
+    left: 115%;
+  }
+  .right::after {
+    @include arrow(50%, -10px )
+  }
+  .left {
+    right: 115%;
+  }
+  .left::after {
+    @include arrow(50%, 100% )
+  }
+  .top {
+    top: -100%;
+  }
+  .top::after {
+    @include arrow(115%, 45% )
+  }
+  .down {
+    top: 115%;
+  }
+  .down::after {
+    @include arrow(-15%, 45% )
+  }
 }
 .btn:focus {
   outline: none;
 }
 .btn:active {
   animation: pulse 1s;
+}
+.btn:hover .tooltiptext {
+  visibility: visible;
 }
 
 .btn-primary {
@@ -75,7 +145,7 @@
   box-sizing: border-box;
   @include icon($textColor-primary);
 }
-.btnIcon:hover{
+.btnIcon:hover {
   background-color: rgba($color: $textColor-secondary, $alpha: 0.1);
 }
 

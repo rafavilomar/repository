@@ -50,7 +50,7 @@ export const shortButton = [
   },
   {
     icon: <Mail />,
-    title: "Send me a message",
+    title: "Contact me",
     url: "mailto:rafavilomar@gmail.com",
     externalURL: true,
   },

@@ -27,6 +27,8 @@ const Presentation = () => {
               title={e.title}
               variant="secondary"
               externalURL={e.externalURL}
+              ttDirection='right'
+              ttValue={e.title}
             />
           ))}
         </div>
