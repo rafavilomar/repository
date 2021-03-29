@@ -58,7 +58,7 @@ export const shortButton = [
     icon: <Download />,
     title: "Download CV",
     url:
-      "https://drive.google.com/uc?id=1EAMHRGH55SuSZqVTqAm3wuSUGmZcsuM-&export=download",
+      "https://drive.google.com/file/d/1WQQNIG46h532fjv0OfjTvVKkeLhfaXNW/view",
     externalURL: true,
   },
 ];
