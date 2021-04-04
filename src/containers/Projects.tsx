@@ -10,6 +10,7 @@ import { projectList } from "../helpers/projects";
 const Projects = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Projects | Rafael Vilomar";
     console.log(projectList)
   }, []);
   return (

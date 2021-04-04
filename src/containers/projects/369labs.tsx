@@ -6,18 +6,15 @@ import ShortButton from "../../components/layout/ShortButton";
 import ProjectPresentation from "../../components/ProjectPresentation";
 import { project, projectList } from "../../helpers/projects";
 
-// ------------ IMAGES ---------------
-import _369labs__presentation from "../../assets/imgs/projects/369labs/369labs-presentation.png";
-import _369labs__preview from "../../assets/imgs/projects/369labs/369labs-preview.png";
-import _369labs_investor from "../../assets/imgs/projects/369labs/investor-form.png";
-import _369labs_partner from "../../assets/imgs/projects/369labs/partner-form.png";
 import Contacme from "../../components/layout/Contacme";
 
 const _369labs = () => {
   const [projectDetails, setProjectDetails] = React.useState<project>();
   React.useEffect(() => {
+    window.scrollTo(0, 0);
+    document.title = "369labs | Rafael Vilomar";
     setProjectDetails(projectList[0]);
-  });
+  },[]);
 
   return (
     <>

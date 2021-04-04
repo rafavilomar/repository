@@ -11,6 +11,7 @@ import Skills from "../components/Skills";
 const Home = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Home | Rafael Vilomar";
   }, []);
   return (
     <>

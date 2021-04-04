@@ -4,7 +4,6 @@ import {
   Business,
   LogoGithub,
   LogoLinkedin,
-  Mail,
   Download,
   LogoBehance,
 } from "react-ionicons";

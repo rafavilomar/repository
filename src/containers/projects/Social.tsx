@@ -5,21 +5,16 @@ import Header from "../../components/layout/Header";
 import ShortButton from "../../components/layout/ShortButton";
 import ProjectPresentation from "../../components/ProjectPresentation";
 
-// ------------- IMAGES -----------------
-import _social__presentation from "../../assets/imgs/projects/social/social-presentation.png";
-import _social__preview from "../../assets/imgs/projects/social/social-preview.png";
-import _social__light1 from "../../assets/imgs/projects/social/light1.png";
-import _social__light2 from "../../assets/imgs/projects/social/light2.png";
-import _social__dark1 from "../../assets/imgs/projects/social/dark1.png";
-import _social__dark2 from "../../assets/imgs/projects/social/dark2.png";
 import Contacme from "../../components/layout/Contacme";
 import { project, projectList } from "../../helpers/projects";
 
 const Social = () => {
     const [projectDetails, setProjectDetails] = React.useState<project>();
     React.useEffect(() => {
+      window.scrollTo(0, 0);
+      document.title = "Social Dashboard | Rafael Vilomar";
       setProjectDetails(projectList[1]);
-    });
+    },[]);
     
   return (
     <>

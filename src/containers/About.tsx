@@ -10,6 +10,7 @@ import Learning from "../components/Learning";
 const About = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "About | Rafael Vilomar";
   }, []);
   return (
     <>
