@@ -19,7 +19,6 @@ const App = () => {
       <Route exact path="/about" component={About} />
       <Route exact path="/369labs" component={_369labs} />
       <Route exact path="/social-dashboard" component={Social} />
-      {/* <Route exact path="/:project_id" component={ProjectDetails} /> */}
       <Route component={NotFound} />
     </Switch>
   );

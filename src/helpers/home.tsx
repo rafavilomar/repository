@@ -6,6 +6,7 @@ import {
   LogoLinkedin,
   Mail,
   Download,
+  LogoBehance,
 } from "react-ionicons";
 import cross_platform from "../assets/imgs/skills/multi-plataform.svg";
 import project from "../assets/imgs/skills/project.svg";
@@ -49,9 +50,9 @@ export const shortButton = [
     externalURL: true,
   },
   {
-    icon: <Mail />,
-    title: "Contact me",
-    url: "mailto:rafavilomar@gmail.com",
+    icon: <LogoBehance />,
+    title: "Behance profile",
+    url: "https://www.behance.net/rafaelvilomar",
     externalURL: true,
   },
   {
