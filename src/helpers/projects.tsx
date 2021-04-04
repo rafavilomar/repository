@@ -1,8 +1,14 @@
 import _369labs__presentation from "../assets/imgs/projects/369labs/369labs-presentation.png";
 import _369labs__preview from "../assets/imgs/projects/369labs/369labs-preview.png";
+import _369labs_investor from "../assets/imgs/projects/369labs/investor-form.png"
+import _369labs_partner from "../assets/imgs/projects/369labs/partner-form.png"
 
 import _social__presentation from "../assets/imgs/projects/social/social-presentation.png";
 import _social__preview from "../assets/imgs/projects/social/social-preview.png";
+import _social__light1 from "../assets/imgs/projects/social/light1.png";
+import _social__light2 from "../assets/imgs/projects/social/light2.png";
+import _social__dark1 from "../assets/imgs/projects/social/dark1.png";
+import _social__dark2 from "../assets/imgs/projects/social/dark2.png";
 
 export const projectList: project[] = [
   {
@@ -16,7 +22,9 @@ export const projectList: project[] = [
     section: [
       {
         title: "The problem",
-        image: _369labs__presentation,
+        image: [_369labs_partner, _369labs_investor],
+        col: 1,
+        colxl: 1,
         paragraphs: [
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione deserunt, at nostrum impedit blanditiis minima facilis expedita tenetur accusantium error, modi sint quaerat sunt nihil repellat. Rerum, corrupti! Necessitatibus, fugit",
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione deserunt, at nostrum impedit blanditiis minima facilis expedita tenetur accusantium error, modi sint quaerat sunt nihil repellat. Rerum, corrupti! Necessitatibus, fugit",
@@ -36,7 +44,9 @@ export const projectList: project[] = [
     section: [
       {
         title: "The problem",
-        image: _social__presentation,
+        image: [_social__light1, _social__light2, _social__dark1, _social__dark2],
+        col: 2,
+        colxl: 4,
         paragraphs: [
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione deserunt, at nostrum impedit blanditiis minima facilis expedita tenetur accusantium error, modi sint quaerat sunt nihil repellat. Rerum, corrupti! Necessitatibus, fugit",
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione deserunt, at nostrum impedit blanditiis minima facilis expedita tenetur accusantium error, modi sint quaerat sunt nihil repellat. Rerum, corrupti! Necessitatibus, fugit",
@@ -54,13 +64,15 @@ export type project = {
     category: string
     date: string
     section: sectionProject[]
-    dribbble?: string,
+    behance?: string,
     github?: string,
     live?: string
   }
   
   type sectionProject = {
     title: string
-    image: any
+    image: any[]
+    col: number
+    colxl: number
     paragraphs: string[]
   }
