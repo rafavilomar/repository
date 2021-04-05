@@ -7,6 +7,8 @@ import Header from "../components/layout/Header";
 import ShortButton from "../components/layout/ShortButton";
 import Learning from "../components/Learning";
 
+import profile from '../assets/imgs/brand/profile.jpg'
+
 const About = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
@@ -18,7 +20,7 @@ const About = () => {
       <ShortButton />
       <section className="basicInformation">
         <img
-          src="https://images.pexels.com/photos/6833449/pexels-photo-6833449.jpeg?cs=srgb&dl=pexels-dimitry-zub-6833449.jpg&fm=jpg"
+          src={profile}
           alt="profile"
         />
         <div>
