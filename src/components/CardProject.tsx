@@ -6,6 +6,7 @@ import { project } from "../helpers/projects";
 import { LogoBehance, LogoGithub, Wifi } from "react-ionicons";
 import Button from "./Button";
 import IconButton from "./IconButton";
+import { Link } from "react-router-dom";
 
 type props = {
   project: project;
@@ -13,7 +14,7 @@ type props = {
 
 const CardProject: React.FC<props> = ({ project }) => {
   return (
-    <article className="cardProject">
+    <Link to={`/${project.id}`} className="cardProject">
       <div className="cardProject__head">
         {project.behance && (
           <IconButton
@@ -44,7 +45,7 @@ const CardProject: React.FC<props> = ({ project }) => {
         )}
         <Button value="Detalles" url={`/${project.id}`} />
       </div>
-    </article>
+    </Link>
   );
 };
 export default CardProject;
