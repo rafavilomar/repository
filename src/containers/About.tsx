@@ -25,7 +25,7 @@ const About = () => {
         />
         <div>
           <h2 className="txt mainTitle-secondary">Rafael Vilomar</h2>
-          <h3 className="txt secondaryTitle">Web Developer</h3>
+          <h3 className="txt secondaryTitle">{`Designer & front-end developer`}</h3>
           <p className="txt body">
             I live in my hometown Santo Domingo, Dominican Republic, where I am
             also studying software engineering at UAPA.
