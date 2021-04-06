@@ -21,15 +21,34 @@ export const projectList: project[] = [
     live: 'https://www.369labstech.com',
     section: [
       {
-        title: "The problem",
+        title: "Context",
         image: [_369labs_partner, _369labs_investor],
         col: 1,
         colxl: 1,
         paragraphs: [
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione deserunt, at nostrum impedit blanditiis minima facilis expedita tenetur accusantium error, modi sint quaerat sunt nihil repellat. Rerum, corrupti! Necessitatibus, fugit",
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione deserunt, at nostrum impedit blanditiis minima facilis expedita tenetur accusantium error, modi sint quaerat sunt nihil repellat. Rerum, corrupti! Necessitatibus, fugit",
+          "369labs is a new company that seeks to enter into the development of technological products for companies through web and mobile applications.",
+          "At this time they are developing their brand, presence in social networks, website, as well as their first product.",
         ],
       },
+      {
+        title: "The problem",
+        // image: [_369labs_partner, _369labs_investor],
+        col: 1,
+        colxl: 1,
+        paragraphs: [
+          "A platform or website was required to present the brand as well as its products. This site should also serve as a form of contact, clients, distributors and investors who wanted to be part of and join the project.",
+        ],
+      },
+      {
+        title: "The Solution",
+        // image: [_369labs_partner, _369labs_investor],
+        col: 1,
+        colxl: 1,
+        paragraphs: [
+          "A landing page was built. It should serve to convert potential distributors and investors into partners of the brand and work together with the company.",
+          "The landing page has several forms according to the objectives sought, it has a section of products and technologies applied by the development team.",
+        ],
+      }
     ],
   },
   {
@@ -71,7 +90,7 @@ export type project = {
   
   type sectionProject = {
     title: string
-    image: any[]
+    image?: any[]
     col: number
     colxl: number
     paragraphs: string[]

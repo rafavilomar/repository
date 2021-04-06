@@ -30,7 +30,7 @@ const _369labs = () => {
         live={projectDetails?.live}
       />
 
-      <section className="project-section">
+      <section className="project-section" id={projectDetails?.section[0].title}>
         <div>
           <h4 className="txt subtitle">{projectDetails?.section[0].title}</h4>
           {projectDetails?.section[0].paragraphs.map((e) => (
@@ -38,11 +38,27 @@ const _369labs = () => {
           ))}
         </div>
         <section className="forms">
-          {projectDetails?.section[0].image.map((image) => (
-            <img src={image} alt="example" />
+          {projectDetails?.section[0].image?.map((image) => (
+            <img src={image} alt="preview" />
           ))}
         </section>
       </section>
+      
+      <section className="project-section" id={projectDetails?.section[0].title}>
+        <div>
+          <h4 className="txt subtitle">{projectDetails?.section[1].title}</h4>
+          {projectDetails?.section[1].paragraphs.map((e) => (
+            <p className="txt body"> {e} </p>
+          ))}
+        </div>
+        <div>
+          <h4 className="txt subtitle">{projectDetails?.section[2].title}</h4>
+          {projectDetails?.section[2].paragraphs.map((e) => (
+            <p className="txt body"> {e} </p>
+          ))}
+        </div>
+      </section>
+
       <Contacme />
     </>
   );

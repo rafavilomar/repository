@@ -93,7 +93,7 @@ const ProjectDetails: React.FC<props> = ({ match }) => {
           //style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10, height: 500}}
           >
           </section>
-          {section.image.map((image) => (
+          {section.image &&section.image?.map((image) => (
             <img
             src={image}
             alt="example"

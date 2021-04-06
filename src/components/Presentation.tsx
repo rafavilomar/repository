@@ -4,7 +4,6 @@ import "../assets/styles/components/presentation.scss";
 import Button from "./Button";
 
 import { secondaryButton } from "../helpers/home";
-import brand from '../assets/imgs/brand/brand-dark.png'
 
 const Presentation = () => {
   return (
@@ -12,7 +11,6 @@ const Presentation = () => {
       <div className="brand">
         <div className="first"></div>
         <div className="second"></div>
-        {/* <img src={brand} alt=""/> */}
       </div>
       <div className="information">
       <div className="presentation__nickname">

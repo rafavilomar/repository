@@ -37,7 +37,7 @@ const Social = () => {
           ))}
         </div>
         <section className="social-screens">
-          {projectDetails?.section[0].image.map((image) => (
+          {projectDetails?.section[0].image?.map((image) => (
             <img src={image} alt="example" />
           ))}
         </section>
