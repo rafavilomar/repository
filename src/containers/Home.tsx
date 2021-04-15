@@ -1,4 +1,6 @@
 import React from "react";
+import ReactGA from 'react-ga' 
+
 import "../assets/styles/container/home.scss";
 import BigCardProject from "../components/BigCardProject";
 import Contacme from "../components/layout/Contacme";
@@ -11,6 +13,8 @@ import Skills from "../components/Skills";
 const Home = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
+    ReactGA.initialize('G-K790FJVB40');
+    ReactGA.pageview('/');
     document.title = "Home | Rafael Vilomar";
   }, []);
   return (
