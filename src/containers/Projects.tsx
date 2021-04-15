@@ -1,4 +1,5 @@
 import React from "react";
+import ReactGA from 'react-ga' 
 import "../assets/styles/container/projects.scss";
 
 import CardProject from "../components/CardProject";
@@ -11,7 +12,7 @@ const Projects = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.title = "Projects | Rafael Vilomar";
-    console.log(projectList)
+    ReactGA.pageview('/projects');
   }, []);
   return (
     <>

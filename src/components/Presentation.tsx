@@ -4,8 +4,10 @@ import "../assets/styles/components/presentation.scss";
 import Button from "./Button";
 
 import { secondaryButton } from "../helpers/home";
+import { actionButton } from "../helpers/analytics";
 
 const Presentation = () => {
+
   return (
     <section className="presentation">
       <div className="brand">
@@ -39,7 +41,7 @@ const Presentation = () => {
         </div>
       </div>
       <div className="presentation__action">
-        <Button value="Projects" url='/projects' />
+        <Button value="Projects" url='/projects' onClick={()=> actionButton("Main button", 'Clik on button "Projects"')} />
       </div>
       </div>
     </section>

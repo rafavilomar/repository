@@ -13,7 +13,8 @@ type props = {
   title?: string;
   externalURL?: boolean;
   ttValue?: string;
-  ttDirection?: ttDirection
+  ttDirection?: ttDirection;
+  onClick?: Function
 };
 
 const Button: React.FC<props> = ({
@@ -25,13 +26,15 @@ const Button: React.FC<props> = ({
   title,
   externalURL = false,
   ttValue,
-  ttDirection
+  ttDirection,
+  onClick
 }) => {
   return (
     <>
       {!externalURL ? (
         <Link to={url}>
           <button
+            onClick={()=> onClick && onClick()}
             className={`${
               variant === "primary" ? "btn-primary" : "btn-secondary"
             } btn `}
@@ -44,6 +47,7 @@ const Button: React.FC<props> = ({
       ) : (
         <a href={url} target="_blank" rel='noreferrer'>
           <button
+            onClick={()=> onClick && onClick()}
             className={`${
               variant === "primary" ? "btn-primary" : "btn-secondary"
             } btn `}

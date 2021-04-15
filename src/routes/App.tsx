@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga' 
 import {Route, Switch} from "react-router-dom";
 
 import Home from "../containers/Home";
@@ -13,6 +14,9 @@ import Vyrx_app from '../containers/projects/vyrx_app'
 import Social from '../containers/projects/Social'
 
 const App = () => {
+  React.useEffect(() => {
+    ReactGA.initialize('UA-194691329-1');
+  })
   return (
     <Switch>
       <Route exact path="/" component={Home} />

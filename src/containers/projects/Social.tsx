@@ -1,4 +1,5 @@
 import React from "react";
+import ReactGA from 'react-ga' 
 import "../../assets/styles/container/projects/social.scss";
 
 import Header from "../../components/layout/Header";
@@ -14,6 +15,7 @@ const Social = () => {
       window.scrollTo(0, 0);
       document.title = "Social Dashboard | Rafael Vilomar";
       setProjectDetails(projectList[2]);
+      ReactGA.pageview('/social-dashboard');
     },[]);
     
   return (
