@@ -3,6 +3,7 @@ import IconButton from "../IconButton";
 import "../../assets/styles/components/layout/shortButton.scss";
 
 import { shortButton } from "../../helpers/home";
+import { actionButton } from "../../helpers/analytics";
 
 const ShortButton = () => {
   return (
@@ -17,6 +18,9 @@ const ShortButton = () => {
           style={{height: 45, width: 45}}
           ttDirection='left'
           ttValue={e.title}
+          onClick={() =>
+            actionButton("Icon button", e.title)
+          }
         />
       ))}
     </section>

@@ -13,6 +13,7 @@ type props = {
   externalURL?: boolean;
   ttValue?: string;
   ttDirection?: ttDirection
+  onClick?: Function
 };
 
 const IconButton: React.FC<props> = ({
@@ -23,13 +24,15 @@ const IconButton: React.FC<props> = ({
   title,
   externalURL = false,
   ttValue,
-  ttDirection
+  ttDirection,
+  onClick
 }) => {
   return (
     <>
       {!externalURL ? (
         <Link to={url}>
           <button
+            onClick={()=> onClick && onClick()}
             className={`${
               variant === "primary" ? "btnIcon-primary" : "btnIcon-secondary"
             } btn btnIcon `}
@@ -42,6 +45,7 @@ const IconButton: React.FC<props> = ({
       ) : (
         <a href={url} target="_blank" rel="noreferrer">
           <button
+            onClick={()=> onClick && onClick()}
             className={`${
               variant === "primary" ? "btnIcon-primary" : "btnIcon-secondary"
             } btn btnIcon `}
