@@ -1,4 +1,6 @@
 import React from "react";
+import ReactGA from 'react-ga' 
+
 import "../assets/styles/container/about.scss";
 import ClientList from "../components/ClientList";
 
@@ -13,6 +15,8 @@ const About = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.title = "About | Rafael Vilomar";
+    ReactGA.initialize('G-K790FJVB40');
+    ReactGA.pageview('/');
   }, []);
   return (
     <>
