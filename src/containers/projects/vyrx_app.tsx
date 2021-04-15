@@ -1,4 +1,5 @@
 import React from "react";
+import ReactGA from 'react-ga' 
 import "../../assets/styles/container/projects/social.scss";
 
 import Header from "../../components/layout/Header";
@@ -14,6 +15,7 @@ const Vyrx_app = () => {
       window.scrollTo(0, 0);
       document.title = "VYR-X APP | Rafael Vilomar";
       setProjectDetails(projectList[1]);
+      ReactGA.pageview('/vyrx-app');
     },[]);
     
   return (

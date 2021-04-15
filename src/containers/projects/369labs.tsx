@@ -1,4 +1,5 @@
 import React from "react";
+import ReactGA from 'react-ga' 
 import "../../assets/styles/container/projects/369labs.scss";
 
 import Header from "../../components/layout/Header";
@@ -14,6 +15,7 @@ const _369labs = () => {
     window.scrollTo(0, 0);
     document.title = "369labs | Rafael Vilomar";
     setProjectDetails(projectList[0]);
+    ReactGA.pageview('/369labs');
   },[]);
 
   return (
