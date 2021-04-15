@@ -11,11 +11,13 @@ import Presentation from "../components/Presentation";
 import Skills from "../components/Skills";
 
 const Home = () => {
+
   React.useEffect(() => {
     window.scrollTo(0, 0);
     ReactGA.pageview('/');
     document.title = "Home | Rafael Vilomar";
   }, []);
+
   return (
     <>
       <Header />
