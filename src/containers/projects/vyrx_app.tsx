@@ -8,12 +8,12 @@ import ProjectPresentation from "../../components/ProjectPresentation";
 import Contacme from "../../components/layout/Contacme";
 import { project, projectList } from "../../helpers/projects";
 
-const Social = () => {
+const Vyrx_app = () => {
     const [projectDetails, setProjectDetails] = React.useState<project>();
     React.useEffect(() => {
       window.scrollTo(0, 0);
-      document.title = "Social Dashboard | Rafael Vilomar";
-      setProjectDetails(projectList[2]);
+      document.title = "VYR-X APP | Rafael Vilomar";
+      setProjectDetails(projectList[1]);
     },[]);
     
   return (
@@ -46,4 +46,4 @@ const Social = () => {
     </>
   );
 };
-export default Social;
+export default Vyrx_app;

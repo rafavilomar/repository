@@ -9,6 +9,7 @@ import NotFound from '../containers/NotFound';
 // ------------------ PROJECTS ------------------
 
 import _369labs from '../containers/projects/369labs'
+import Vyrx_app from '../containers/projects/vyrx_app'
 import Social from '../containers/projects/Social'
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
       <Route exact path="/projects" component={Projects} />
       <Route exact path="/about" component={About} />
       <Route exact path="/369labs" component={_369labs} />
+      <Route exact path="/vyrx-app" component={Vyrx_app} />
       <Route exact path="/social-dashboard" component={Social} />
       <Route component={NotFound} />
     </Switch>

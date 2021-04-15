@@ -52,6 +52,27 @@ export const projectList: project[] = [
     ],
   },
   {
+    id: "vyrx-app",
+    name: "VYR-X APP",
+    previewImg: _social__preview,
+    presentationImg: _social__presentation,
+    category: "Design UI/UX",
+    date: "2020",
+    behance: 'https://www.behance.net/gallery/117535947/VYR-X-APP',
+    section: [
+      {
+        title: "About",
+        image: [_social__light1, _social__light2, _social__dark1, _social__dark2],
+        col: 2,
+        colxl: 4,
+        paragraphs: [
+          "The 369labs development group needed a redesign of the mobile application for their VYR-X APP product.",
+          "VYR-X APP, a multiplatform tool for supervision, monitoring and statistical monitoring of the security operations of private companies and/or Private Security companies.",
+        ],
+      },
+    ],
+  },
+  {
     id: "social-dashboard",
     name: "Social Dashboard",
     previewImg: _social__preview,
