@@ -16,7 +16,7 @@ const About = () => {
     window.scrollTo(0, 0);
     document.title = "About | Rafael Vilomar";
     ReactGA.initialize('G-K790FJVB40');
-    ReactGA.pageview('/');
+    ReactGA.pageview('/about');
   }, []);
   return (
     <>
