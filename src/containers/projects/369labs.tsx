@@ -1,5 +1,5 @@
-import React from "react";
-import ReactGA from 'react-ga' 
+import React, { lazy, Suspense } from "react";
+import ReactGA from "react-ga";
 import "../../assets/styles/container/projects/369labs.scss";
 
 import Header from "../../components/layout/Header";
@@ -8,6 +8,9 @@ import ProjectPresentation from "../../components/ProjectPresentation";
 import { project, projectList } from "../../helpers/projects";
 
 import Contacme from "../../components/layout/Contacme";
+import Square from "../../components/lazy/Square";
+
+const Imagen = lazy(() => import("../../components/layout/images"));
 
 const _369labs = () => {
   const [projectDetails, setProjectDetails] = React.useState<project>();
@@ -15,8 +18,8 @@ const _369labs = () => {
     window.scrollTo(0, 0);
     document.title = "369labs | Rafael Vilomar";
     setProjectDetails(projectList[0]);
-    ReactGA.pageview('/369labs');
-  },[]);
+    ReactGA.pageview("/369labs");
+  }, []);
 
   return (
     <>
@@ -32,7 +35,10 @@ const _369labs = () => {
         live={projectDetails?.live}
       />
 
-      <section className="project-section" id={projectDetails?.section[0].title}>
+      <section
+        className="project-section"
+        id={projectDetails?.section[0].title}
+      >
         <div>
           <h4 className="txt subtitle">{projectDetails?.section[0].title}</h4>
           {projectDetails?.section[0].paragraphs.map((e) => (
@@ -41,12 +47,17 @@ const _369labs = () => {
         </div>
         <section className="forms">
           {projectDetails?.section[0].image?.map((image) => (
-            <img src={image} alt="preview" />
+            <Suspense fallback={<Square />} key={image.alt}>
+              <Imagen src={image.src} alt={image.alt} key={image.alt} />
+            </Suspense>
           ))}
         </section>
       </section>
-      
-      <section className="project-section" id={projectDetails?.section[0].title}>
+
+      <section
+        className="project-section"
+        id={projectDetails?.section[0].title}
+      >
         <div>
           <h4 className="txt subtitle">{projectDetails?.section[1].title}</h4>
           {projectDetails?.section[1].paragraphs.map((e) => (

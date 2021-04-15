@@ -95,7 +95,7 @@ const ProjectDetails: React.FC<props> = ({ match }) => {
           </section>
           {section.image &&section.image?.map((image) => (
             <img
-            src={image}
+            src={image.src}
             alt="example"
           />
           ))}

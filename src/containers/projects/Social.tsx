@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactGA from 'react-ga' 
 import "../../assets/styles/container/projects/social.scss";
 
@@ -8,6 +8,9 @@ import ProjectPresentation from "../../components/ProjectPresentation";
 
 import Contacme from "../../components/layout/Contacme";
 import { project, projectList } from "../../helpers/projects";
+import Square from "../../components/lazy/Square";
+
+const Imagen = lazy(() => import("../../components/layout/images"));
 
 const Social = () => {
     const [projectDetails, setProjectDetails] = React.useState<project>();
@@ -40,7 +43,9 @@ const Social = () => {
         </div>
         <section className="social-screens">
           {projectDetails?.section[0].image?.map((image) => (
-            <img src={image} alt="example" />
+            <Suspense fallback={<Square />} key={image.alt}>
+              <Imagen src={image.src} alt={image.alt} key={image.alt} />
+            </Suspense>
           ))}
         </section>
       </section>

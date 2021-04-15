@@ -8,12 +8,24 @@ import { BrowserRouter } from 'react-router-dom';
 import './assets/styles/main.scss';
 import './assets/styles/components/typography.scss'
 
+
+
 ReactDOM.render(
   <BrowserRouter>
     <App />
   </BrowserRouter>,
   document.getElementById('root')
 );
+
+// const Index = () => {
+//   return (<>
+//     <BrowserRouter>
+//       <App />
+//     </BrowserRouter>,
+//     {document.getElementById('root')}
+//   </>)
+// }
+// export default Index
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {lazy, Suspense} from "react";
 import ReactGA from 'react-ga' 
 
 import "../assets/styles/container/about.scss";
@@ -7,9 +7,12 @@ import ClientList from "../components/ClientList";
 import Contacme from "../components/layout/Contacme";
 import Header from "../components/layout/Header";
 import ShortButton from "../components/layout/ShortButton";
+import Square from "../components/lazy/Square";
 import Learning from "../components/Learning";
 
-import profile from '../assets/imgs/brand/profile.jpg'
+import profile from "../assets/imgs/brand/profile.jpg";
+
+const Imagen = lazy(() => import('../components/layout/images'))
 
 const About = () => {
   React.useEffect(() => {
@@ -22,10 +25,9 @@ const About = () => {
       <Header />
       <ShortButton />
       <section className="basicInformation">
-        <img
-          src={profile}
-          alt="profile"
-        />
+        <Suspense fallback={<Square/>}>
+          <Imagen src={profile} alt='profile'/>
+        </Suspense>
         <div>
           <h2 className="txt mainTitle-secondary">Rafael Vilomar</h2>
           <h3 className="txt secondaryTitle">{`Designer & front-end developer`}</h3>

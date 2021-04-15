@@ -12,6 +12,10 @@
     // min-height: 400px;
     object-fit: cover;
   }
+  >span {
+    border-radius: 30px;
+    height: 200px;
+  }
 }
 
 .project__data {
@@ -59,6 +63,10 @@
       width: 100%;
       min-height: 400px;
       object-fit: cover;
+    }
+    >span {
+      border-radius: 30px;
+      height: 500px;
     }
   }
   .project-section {
