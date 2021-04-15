@@ -6,10 +6,10 @@
   flex-direction: column;
   gap: 20px;
 
-  img {
+  > img {
     border-radius: 30px;
     width: 100%;
-    min-height: 400px;
+    // min-height: 400px;
     object-fit: cover;
   }
 }
@@ -17,10 +17,14 @@
 .project__data {
   display: flex;
   flex-direction: column;
-  h3 {
-    margin-bottom: 10px;
+  > h3 {
+    margin-bottom: 0px;
+    font-family: $font-primary;
   }
-  div {
+  > h5 {
+  font-size: 20px;
+  }
+  > div {
     margin-top: 20px;
     display: flex;
     gap: 10px;
@@ -29,16 +33,19 @@
 }
 
 .project-section {
-  padding: 40px 0px;
+  padding: 30px 0px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 40px;
 
-  > img {
-    border-radius: 30px;
-    width: 100%;
-    min-height: 300px;
-    object-fit: cover;
+  > div {
+    > h4 {
+      margin-bottom: 10px;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
   }
 }
 
@@ -47,7 +54,7 @@
     width: 80%;
     margin: auto;
 
-    img {
+    > img {
       border-radius: 30px;
       width: 100%;
       min-height: 400px;
@@ -56,27 +63,10 @@
   }
   .project-section {
     padding: 40px 0px;
-    display: flex;
-    flex-direction: column;
     gap: 50px;
 
     > div {
-      > h4 {
-        margin-bottom: 10px;
-      }
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
       width: 40vw;
-      margin: auto;
-    }
-
-    > img {
-      border-radius: 30px;
-      width: 80%;
-      min-height: 300px;
-      object-fit: cover;
-      margin: auto;
     }
   }
 }

@@ -141,12 +141,12 @@
   justify-content: center;
   align-items: center;
   padding: 8px;
-  background-color: transparent;
+  background-color: rgba($color: $textColor-secondary, $alpha: 0.1);
   box-sizing: border-box;
   @include icon($textColor-primary);
 }
 .btnIcon:hover {
-  background-color: rgba($color: $textColor-secondary, $alpha: 0.1);
+  background-color: rgba($color: $textColor-secondary, $alpha: 0.3);
 }
 
 .btnIcon-primary {

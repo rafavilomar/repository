@@ -7,9 +7,12 @@ import Header from "../components/layout/Header";
 import ShortButton from "../components/layout/ShortButton";
 import Learning from "../components/Learning";
 
+import profile from '../assets/imgs/brand/profile.jpg'
+
 const About = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "About | Rafael Vilomar";
   }, []);
   return (
     <>
@@ -17,12 +20,12 @@ const About = () => {
       <ShortButton />
       <section className="basicInformation">
         <img
-          src="https://images.pexels.com/photos/6833449/pexels-photo-6833449.jpeg?cs=srgb&dl=pexels-dimitry-zub-6833449.jpg&fm=jpg"
+          src={profile}
           alt="profile"
         />
         <div>
           <h2 className="txt mainTitle-secondary">Rafael Vilomar</h2>
-          <h3 className="txt secondaryTitle">Web Developer</h3>
+          <h3 className="txt secondaryTitle">{`Designer & front-end developer`}</h3>
           <p className="txt body">
             I live in my hometown Santo Domingo, Dominican Republic, where I am
             also studying software engineering at UAPA.

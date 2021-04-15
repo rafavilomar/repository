@@ -8,6 +8,11 @@ import { secondaryButton } from "../helpers/home";
 const Presentation = () => {
   return (
     <section className="presentation">
+      <div className="brand">
+        <div className="first"></div>
+        <div className="second"></div>
+      </div>
+      <div className="information">
       <div className="presentation__nickname">
         <h1 className="txt mainTitle-primary">@rafavilomar</h1>
       </div>
@@ -35,6 +40,7 @@ const Presentation = () => {
       </div>
       <div className="presentation__action">
         <Button value="Projects" url='/projects' />
+      </div>
       </div>
     </section>
   );
