@@ -22,7 +22,10 @@ export const projectList: project[] = [
     section: [
       {
         title: "Context",
-        image: [_369labs_partner, _369labs_investor],
+        image: [
+          {src: _369labs_partner, alt: 'partner' },
+          {src: _369labs_investor, alt: 'investor' }
+        ],
         col: 1,
         colxl: 1,
         paragraphs: [
@@ -62,7 +65,12 @@ export const projectList: project[] = [
     section: [
       {
         title: "About",
-        image: [_social__light1, _social__light2, _social__dark1, _social__dark2],
+        image: [
+          {src: _social__light1, alt: 'partner' },
+          {src: _social__light2, alt: 'investor' },
+          {src: _social__dark1, alt: 'partner2' },
+          {src: _social__dark2, alt: 'investor2' }
+        ],
         col: 2,
         colxl: 4,
         paragraphs: [
@@ -84,7 +92,12 @@ export const projectList: project[] = [
     section: [
       {
         title: "The problem",
-        image: [_social__light1, _social__light2, _social__dark1, _social__dark2],
+        image: [
+          {src: _social__light1, alt: 'partner' },
+          {src: _social__light2, alt: 'investor' },
+          {src: _social__dark1, alt: 'partner2' },
+          {src: _social__dark2, alt: 'investor2' }
+        ],
         col: 2,
         colxl: 4,
         paragraphs: [
@@ -111,8 +124,13 @@ export type project = {
   
   type sectionProject = {
     title: string
-    image?: any[]
+    image?: images[]
     col: number
     colxl: number
     paragraphs: string[]
+  }
+
+  type images = {
+    src: any
+    alt: string
   }

@@ -1,10 +1,13 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import "../assets/styles/container/projectsDetails.scss";
 
 import { LogoBehance, LogoGithub } from "react-ionicons";
 import Button from "./Button";
 import IconButton from "./IconButton";
 import { actionButton } from "../helpers/analytics";
+import Square from "./lazy/Square";
+
+const Imagen = lazy(() => import("../components/layout/images"));
 
 type props = {
   name?: string;
@@ -61,7 +64,10 @@ const ProjectPresentation: React.FC<props> = ({
           )}
         </div>
       </div>
-      <img src={img} alt="presentation" />
+      {/* <img src={img} alt="presentation" /> */}
+            <Suspense fallback={<Square />}>
+              <Imagen src={img} alt="presentation" />
+            </Suspense>
     </section>
   );
 };

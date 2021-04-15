@@ -8,7 +8,7 @@ const ClientList = () => {
       <ul className="clientList">
         <h3 className="txt subtitle">History</h3>
         {learning.map((e) => (
-          <li className="clientList__item">
+          <li className="clientList__item" key={e.title}>
             <div>
               <h6 className="txt subtitle">{e.client}</h6>
               <p className="txt body">{e.title}</p>
