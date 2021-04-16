@@ -12,27 +12,16 @@
   gap: 19px;
   padding: 20px 0px;
   margin-top: 65px;
-  // background-color: red;
 
   .brand {
     background-image: url('../../imgs//brand//brand-dark.png');
-    // background-color: red;
-    // background-size: 100% 100%;
     background-size: cover;
-    // background: ;
     min-height: 200px;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     min-width: 200px;
-    //min-width: 100px;
-    // border: 1px solid red;
-    // background-color: red;
     margin: auto;
     position: relative;
     img {
       object-fit: cover;
-        // position: absolute;
       width: 100%;
       z-index: 1000;
     }
@@ -47,12 +36,6 @@
     top: -10px;
     bottom: auto;
     z-index: -100;
-
-    // background: linear-gradient(
-    //   0deg,
-    //   rgba(185, 151, 180, 0.91),
-    //   rgba(185, 151, 180, 0.91)
-    // );
     background-color: $bg-alt;
     filter: blur(12px);
     border-radius: 50%;
@@ -66,12 +49,6 @@
     top: auto;
     bottom: -10px;
     z-index: -100;
-
-    // background: linear-gradient(
-    //   0deg,
-    //   rgba(185, 151, 180, 0.91),
-    //   rgba(185, 151, 180, 0.91)
-    // );
     background-color: $bg-alt;
     filter: blur(12px);
     border-radius: 50%;
@@ -82,7 +59,6 @@
     flex-direction: column;
     justify-content: flex-end;
     gap: 19px;
-    // border: white 1px solid;
   }
 }
 .presentation__details > div {
@@ -96,7 +72,7 @@
     bottom: 25px;
     .brand{
         width: 400px;
-        height: 400px;
+        min-height: 400px;
     }
     
     .first {
@@ -151,7 +127,7 @@
   }
   .presentation__details {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     max-width: 620px;
     gap: 20px;
   }
