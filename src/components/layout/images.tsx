@@ -2,10 +2,11 @@ import React from "react";
 
 type props = {
     src: any,
-    alt: string
+    alt: string,
+    className?: string
   };
 
-const Images: React.FC<props> = ({src, alt}) => {
-  return <img src={src} alt={alt} />;
+const Images: React.FC<props> = ({src, alt, className}) => {
+  return <img src={src} alt={alt} className={className} />;
 };
 export default Images;

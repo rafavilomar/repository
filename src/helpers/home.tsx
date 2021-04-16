@@ -1,7 +1,7 @@
 import {
   Globe,
   Cafe,
-  Business,
+  //Business,
   LogoGithub,
   LogoLinkedin,
   Download,
@@ -12,25 +12,24 @@ import project from "../assets/imgs/skills/project.svg";
 import ux_ui from "../assets/imgs/skills/ux-ui.svg";
 
 export const secondaryButton = [
-  {
-    icon: <Business />,
-    value: "369labs",
-    title: "Current job",
-    url: "https://www.369labstech.com",
-    externalURL: true,
-  },
+  // {
+  //   icon: <Business />,
+  //   value: "369labs",
+  //   title: "Current job",
+  //   url: "https://www.369labstech.com",
+  //   externalURL: true,
+  // },
   {
     icon: <Globe />,
-    value: "Social Card",
+    value: "VYR-X APP",
     title: "Last project",
-    url: "https://social-card-dashboard.vercel.app",
-    externalURL: true,
+    url: "vyrx-app",
   },
   {
     icon: <Cafe />,
-    value: "VYR-X",
+    value: "Stay Focus",
     title: "Coding",
-    url: "https://vyrx.netlify.app",
+    url: "https://github.com/rafavilomar/stay-focus",
     externalURL: true,
   },
 ];

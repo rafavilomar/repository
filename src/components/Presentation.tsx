@@ -20,7 +20,7 @@ const Presentation = () => {
       </div>
       <div className="presentation__details">
         <p className="txt body">
-          I'm Rafael, a Web Developer and this is my personal corner on the Web
+          I'm Rafael, a Designer & Front-end Developer and this is my personal corner on the Web
           City. Here you can find information about me, how contact me and
           explore my repositories.
         </p>

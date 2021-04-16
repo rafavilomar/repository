@@ -3,7 +3,7 @@ import "../assets/styles/components/cardProject.scss";
 
 import { project } from "../helpers/projects";
 
-import { LogoBehance, LogoGithub, Wifi } from "react-ionicons";
+import { Globe, LogoBehance, LogoGithub } from "react-ionicons";
 import Button from "./Button";
 import IconButton from "./IconButton";
 import { Link } from "react-router-dom";
@@ -43,7 +43,7 @@ const CardProject: React.FC<props> = ({ project }) => {
       <div className="cardProject__footer">
         {project.live && (
           <IconButton
-            icon={<Wifi />}
+            icon={<Globe/>}
             externalURL
             url={project.live}
             ttValue="Live"
