@@ -5,7 +5,6 @@ import "../assets/styles/container/projects.scss";
 import CardProject from "../components/CardProject";
 import Contacme from "../components/layout/Contacme";
 import Header from "../components/layout/Header";
-import ShortButton from "../components/layout/ShortButton";
 import Square from "../components/lazy/Square";
 import { projectList } from "../helpers/projects";
 
@@ -18,7 +17,6 @@ const Projects = () => {
   return (
     <>
       <Header />
-      <ShortButton />
       <section className="projects">
         {projectList.map((project) => (
           <Suspense key={project.id} fallback={<Square secondaryClass='cardProject' />}>

@@ -4,6 +4,8 @@ import "../../assets/styles/components/layout/contacme.scss";
 import { Mail } from "react-ionicons";
 import Button from "../Button";
 import { actionButton } from "../../helpers/analytics";
+import { shortButton } from "../../helpers/home";
+import IconButton from "../IconButton";
 
 const Contacme = () => {
   return (
@@ -25,6 +27,23 @@ const Contacme = () => {
           actionButton("Main button", 'Clik on button "Contac me"')
         }
       />
+      <div className="social" >
+      {shortButton.map((e) => (
+        <IconButton
+          key={e.title}
+          icon={e.icon}
+          url={e.url}
+          title={e.title}
+          externalURL={e.externalURL}
+          style={{height: 45, width: 45}}
+          ttDirection='down'
+          ttValue={e.title}
+          onClick={() =>
+            actionButton("Icon button", e.title)
+          }
+        />
+      ))}
+      </div>
     </section>
   );
 };

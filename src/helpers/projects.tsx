@@ -3,13 +3,6 @@ import _369labs__preview from "../assets/imgs/projects/369labs/369labs-preview.p
 import _369labs_investor from "../assets/imgs/projects/369labs/investor-form.png"
 import _369labs_partner from "../assets/imgs/projects/369labs/partner-form.png"
 
-// import _social__presentation from "../assets/imgs/projects/social/social-presentation.png";
-// import _social__preview from "../assets/imgs/projects/social/social-preview.png";
-// import _social__light1 from "../assets/imgs/projects/social/light1.png";
-// import _social__light2 from "../assets/imgs/projects/social/light2.png";
-// import _social__dark1 from "../assets/imgs/projects/social/dark1.png";
-// import _social__dark2 from "../assets/imgs/projects/social/dark2.png";
-
 import _vyrx_app__presentation from "../assets/imgs/projects/vyrx_app/presentation.jpg";
 import _vyrx_app__preview from "../assets/imgs/projects/vyrx_app/preview.jpg";
 import _vyrx_app_home from "../assets/imgs/projects/vyrx_app/views/HOME.jpg"

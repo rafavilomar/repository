@@ -1,32 +1,33 @@
-import React, {lazy, Suspense} from "react";
-import ReactGA from 'react-ga' 
+import React, { lazy, Suspense } from "react";
+import ReactGA from "react-ga";
 
 import "../assets/styles/container/about.scss";
 import ClientList from "../components/ClientList";
 
 import Contacme from "../components/layout/Contacme";
 import Header from "../components/layout/Header";
-import ShortButton from "../components/layout/ShortButton";
+import { actionButton } from "../helpers/analytics";
 import Square from "../components/lazy/Square";
 import Learning from "../components/Learning";
 
 import profile from "../assets/imgs/brand/profile.jpg";
+import Button from "../components/Button";
+import { Download } from "react-ionicons";
 
-const Imagen = lazy(() => import('../components/layout/images'))
+const Imagen = lazy(() => import("../components/layout/images"));
 
 const About = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.title = "About | Rafael Vilomar";
-    ReactGA.pageview('/about');
+    ReactGA.pageview("/about");
   }, []);
   return (
     <>
       <Header />
-      <ShortButton />
       <section className="basicInformation">
-        <Suspense fallback={<Square/>}>
-          <Imagen src={profile} alt='profile'/>
+        <Suspense fallback={<Square />}>
+          <Imagen src={profile} alt="profile" />
         </Suspense>
         <div>
           <h2 className="txt mainTitle-secondary">Rafael Vilomar</h2>
@@ -36,15 +37,22 @@ const About = () => {
             also studying software engineering at UAPA.
           </p>
           <p className="txt body">
-            I got to know the world of development when I was 14–15 years old,
-            since then my curiosity has led me to learn more and more. At 16, I
-            finished my high school studies as a computer technician and at 18 I
-            finished my studies in ITLA as a Software Developer.
+            I'm a Designer & Front-end Developer with experience of
+            applications and web pages, creating interfaces and improving the
+            user experience. Able to work on frontend technologies, responsive
+            interface, project management and adapt to the circumstances and
+            needs of the work team.
           </p>
-          <p className="txt body">
-            Lately I have dedicated my time to research about design,
-            prototyping, UI and UX.
-          </p>
+          <Button
+            icon={<Download />}
+            title="Download CV"
+            value="Download CV"
+            url="https://drive.google.com/file/d/1WQQNIG46h532fjv0OfjTvVKkeLhfaXNW/view"
+            externalURL
+            onClick={() =>
+              actionButton("Main button", 'Clik on button "Download CV"')
+            }
+          />
         </div>
       </section>
       <section className="listAbout">

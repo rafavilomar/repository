@@ -1,11 +1,10 @@
 import {
   Globe,
   Cafe,
-  //Business,
   LogoGithub,
   LogoLinkedin,
-  Download,
   LogoBehance,
+  LogoInstagram,
 } from "react-ionicons";
 import cross_platform from "../assets/imgs/skills/multi-plataform.svg";
 import project from "../assets/imgs/skills/project.svg";
@@ -53,11 +52,18 @@ export const shortButton = [
     url: "https://www.behance.net/rafaelvilomar",
     externalURL: true,
   },
+  // {
+  //   icon: <Download />,
+  //   title: "Download CV",
+  //   url:
+  //     "https://drive.google.com/file/d/1WQQNIG46h532fjv0OfjTvVKkeLhfaXNW/view",
+  //   externalURL: true,
+  // },
   {
-    icon: <Download />,
-    title: "Download CV",
+    icon: <LogoInstagram />,
+    title: "Instagram profile",
     url:
-      "https://drive.google.com/file/d/1WQQNIG46h532fjv0OfjTvVKkeLhfaXNW/view",
+      "https://www.instagram.com/rafavilomar/",
     externalURL: true,
   },
 ];
