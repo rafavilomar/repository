@@ -16,6 +16,11 @@
     text-align: center;
   }
 }
+.social {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
 
 @media only screen and (min-width: 450px) {
   .contacme {
