@@ -3,7 +3,6 @@ import ReactGA from "react-ga";
 import "../../assets/styles/container/projects/369labs.scss";
 
 import Header from "../../components/layout/Header";
-import ShortButton from "../../components/layout/ShortButton";
 import ProjectPresentation from "../../components/ProjectPresentation";
 import { project, projectList } from "../../helpers/projects";
 
@@ -24,7 +23,6 @@ const _369labs = () => {
   return (
     <>
       <Header />
-      <ShortButton />
       <ProjectPresentation
         name={projectDetails?.name}
         category={projectDetails?.category}

@@ -3,7 +3,6 @@ import ReactGA from "react-ga";
 import "../../assets/styles/container/projects/vyrx_app.scss";
 
 import Header from "../../components/layout/Header";
-import ShortButton from "../../components/layout/ShortButton";
 import ProjectPresentation from "../../components/ProjectPresentation";
 
 import Contacme from "../../components/layout/Contacme";
@@ -24,7 +23,6 @@ const Vyrx_app = () => {
   return (
     <>
       <Header />
-      <ShortButton />
       <ProjectPresentation
         name={projectDetails?.name}
         category={projectDetails?.category}
