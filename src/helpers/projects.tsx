@@ -18,6 +18,19 @@ import _vyrx_app_sketch_home from "../assets/imgs/projects/vyrx_app/sketchs/home
 import _vyrx_app_sketch_reports from "../assets/imgs/projects/vyrx_app/sketchs/reports.jpeg"
 import _vyrx_app_sketch_profile from "../assets/imgs/projects/vyrx_app/sketchs/profile.jpeg"
 
+import _stay_focus__preview from '../assets/imgs/projects/stay_focus/preview.png'
+import _stay_focus__presentation from '../assets/imgs/projects/stay_focus/presentation.png'
+import _stay_focus__splash_dark from '../assets/imgs/projects/stay_focus/views/SPLASH (dark).png'
+import _stay_focus__splash from '../assets/imgs/projects/stay_focus/views/SPLASH.png'
+import _stay_focus__home from '../assets/imgs/projects/stay_focus/views/HOME.png'
+import _stay_focus__home_dark from '../assets/imgs/projects/stay_focus/views/HOME (dark).png'
+import _stay_focus__settings from '../assets/imgs/projects/stay_focus/views/SETTINGS.png'
+import _stay_focus__settings_dark from '../assets/imgs/projects/stay_focus/views/SETTINGS (dark).png'
+import _stay_focus__list from '../assets/imgs/projects/stay_focus/views/SONGS LIST.png'
+import _stay_focus__listh_dark from '../assets/imgs/projects/stay_focus/views/SONGS LIST (dark).png'
+import _stay_focus__theme from '../assets/imgs/projects/stay_focus/views/THEME.png'
+import _stay_focus__theme_dark from '../assets/imgs/projects/stay_focus/views/THEME (dark).png'
+
 export const projectList: project[] = [
   {
     id: "369labs",
@@ -113,6 +126,65 @@ export const projectList: project[] = [
           "We take as a basis the previous version of VYR-X APP, views, function and color palette to make the new version.",
           "We have analyzedthe flow of actions and views that the user goes through in order to reduce the number of steps that must be taken to perform and access the main functionalities.",
           "During the development of this version, all those functionalities that were not included in the previous version were considered, such as: event calendar, task manager, location management, intuitive SOS alert, and others."
+        ],
+      }
+    ],
+  },
+  {
+    id: "stay-focus",
+    name: "Stay Focus",
+    previewImg: _stay_focus__preview,
+    presentationImg: _stay_focus__presentation,
+    category: "Design UI, Mobile App",
+    date: "2021",
+    behance: 'https://www.behance.net/gallery/118332645/Stay-Focus',
+    section: [
+      {
+        title: "About",
+        col: 2,
+        colxl: 4,
+        paragraphs: [
+          "Stay Focus is a mobile application to study or concentrate on a task, the application is based on the Pomodoro study method.",
+          "In this way the user can start work and study sessions, followed by short breaks and a long break. You can set how long each session will last, as well as additional features like theme change and background music.",
+        ],
+      },
+      {
+        title: "Pomodoro",
+        image: [
+          {src: _stay_focus__splash, alt: 'splash' },
+          {src: _stay_focus__home, alt: 'home' },
+          {src: _stay_focus__settings, alt: 'settings' },
+          {src: _stay_focus__theme, alt: 'theme' },
+          {src: _stay_focus__list, alt: 'songs list' }
+        ],
+        col: 2,
+        colxl: 4,
+        paragraphs: [
+          "Pomodor is a popular time management method. It consists of frequent work sessions with short breaks, thus maintaining concentration and avoiding mental fatigue."
+        ],
+      },
+      {
+        title: "Dark theme",
+        col: 2,
+        colxl: 4,
+        paragraphs: [
+          "For all lovers of dark theme. users can switch between light and dark theme, or can choose \"Auto\" option.",
+          "With the \"Auto\" option activated, the theme will adapt to the time of the device, a light theme during the day and a dark theme at night."
+        ],
+      },
+      {
+        title: "Music",
+        image: [
+          {src: _stay_focus__splash_dark, alt: 'splash dark' },
+          {src: _stay_focus__home_dark, alt: 'home dark' },
+          {src: _stay_focus__settings_dark, alt: 'settings dark' },
+          {src: _stay_focus__theme_dark, alt: 'theme dark' },
+          {src: _stay_focus__listh_dark, alt: 'songs list dark' }
+        ],
+        col: 2,
+        colxl: 4,
+        paragraphs: [
+          "Many of us stayed and worked while listening to background music. That is why Stay Focus has a list of songs chosen so that they can be listened to without disturbing the user."
         ],
       }
     ],
