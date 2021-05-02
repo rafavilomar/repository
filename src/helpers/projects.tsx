@@ -39,7 +39,9 @@ export const projectList: project[] = [
     presentationImg: _369labs__presentation,
     category: "Design UI and web developer",
     date: "2021",
+    role: ['Full stack developer'],
     live: 'https://www.369labstech.com',
+    tools: ['React JS', 'Gatsby', 'Spring boot'],
     section: [
       {
         title: "Context",
@@ -78,10 +80,12 @@ export const projectList: project[] = [
   {
     id: "vyrx-app",
     name: "VYR-X APP",
+    tools: ['Figma'],
     previewImg: _vyrx_app__preview,
     presentationImg: _vyrx_app__presentation,
     category: "Design UI/UX",
     date: "2021",
+    role: ['Designer UI/UX'],
     behance: 'https://www.behance.net/gallery/117535947/VYR-X-APP',
     section: [
       {
@@ -132,12 +136,15 @@ export const projectList: project[] = [
   },
   {
     id: "stay-focus",
+    tools: ['Figma', 'React native', 'Expo'],
+    role: ['Designer', 'Mobile developer'],
     name: "Stay Focus",
     previewImg: _stay_focus__preview,
     presentationImg: _stay_focus__presentation,
     category: "Design UI, Mobile App",
     date: "2021",
     behance: 'https://www.behance.net/gallery/118332645/Stay-Focus',
+    github: 'https://github.com/rafavilomar/stay-focus',
     section: [
       {
         title: "About",
@@ -228,7 +235,9 @@ export type project = {
     section: sectionProject[]
     behance?: string,
     github?: string,
-    live?: string
+    live?: string,
+    role: string[],
+    tools: string[]
   }
   
   type sectionProject = {
