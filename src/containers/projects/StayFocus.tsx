@@ -8,6 +8,7 @@ import ProjectPresentation from "../../components/ProjectPresentation";
 import Contacme from "../../components/layout/Contacme";
 import { project, projectList } from "../../helpers/projects";
 import Square from "../../components/lazy/Square";
+import Summary from "../../components/layout/Summary";
 
 const Imagen = lazy(() => import("../../components/layout/images"));
 
@@ -74,6 +75,15 @@ const StayFocus = () => {
           ))}
         </section>
       </section>
+      <Summary
+        name={projectDetails?.name}
+        date={projectDetails?.date}
+        behance={projectDetails?.behance}
+        github={projectDetails?.github}
+        live={projectDetails?.live}
+        role={projectDetails ? projectDetails.role : []}
+        tools={projectDetails ? projectDetails.tools : []}
+      />
       <Contacme />
     </>
   );

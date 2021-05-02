@@ -2,16 +2,24 @@
 
 .projects {
   padding: 90px 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+@media only screen and (min-width: 450px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+  }
 }
 
 @media only screen and (min-width: 900px) {
     .projects {
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 60px;
+      row-gap: 60px;
     }
 }

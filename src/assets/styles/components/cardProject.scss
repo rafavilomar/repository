@@ -8,15 +8,13 @@
   background: rgba($bg-secondary, 0.66);
   border-radius: 30px;
   gap: 20px;
-
   
   div {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 5px;
     > h4 {
       font-family: $font-primary;
-      // word-spacing: -5pt;
     }
     > h5 {
     font-size: 20px;
@@ -27,7 +25,6 @@
     border-radius: 10px;
     width: 100%;
     height: 100%;
-    min-height: 500px;
     max-width: 500px;
     object-fit: cover;
   }
@@ -42,8 +39,8 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 20px;
-  max-width: 300px;
-  height: 80vh;
+  width: 100%;
+  box-sizing: border-box;
   max-height: 620px;
   min-height: 430px;
   background: rgba($bg-secondary, 0.66);
@@ -97,7 +94,6 @@
 @media only screen and (min-width: 450px) {
   .cardProject {
     max-height: 750px;
-    width: 50vw;
     max-width: 500px;
   }
   .cardProject__footer {
@@ -107,15 +103,6 @@
 }
 
 @media only screen and (min-width: 900px) {
-  .cardProject {
-    width: 27vw;
-    max-width: 500px;
-  }
-
-  .cardProject__image {
-    max-width: 350px;
-    margin: auto;
-  }
   .bigCardProject {
     margin-top: 100px;
     display: flex;
