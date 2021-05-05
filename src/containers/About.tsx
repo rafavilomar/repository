@@ -33,21 +33,21 @@ const About = () => {
           <h2 className="txt mainTitle-secondary">Rafael Vilomar</h2>
           <h3 className="txt secondaryTitle">{`Designer & front-end developer`}</h3>
           <p className="txt body">
-            I live in my hometown Santo Domingo, Dominican Republic, where I am
-            also studying software engineering at UAPA.
+            {`Designer & Front-end Developer with experience of applications and web pages, creating responsive interfaces and improving the user experience.`}
           </p>
           <p className="txt body">
-            I'm a Designer & Front-end Developer with experience of
-            applications and web pages, creating interfaces and improving the
-            user experience. Able to work on frontend technologies, responsive
-            interface, project management and adapt to the circumstances and
-            needs of the work team.
+            Love UI / UX design and create products using tools like: Figma,
+            ReactJS and React Native.
+          </p>
+          <p className="txt body">
+            I'm also studying software engineering at UAPA, front-end technology
+            at Platzi, and challenging my skills in my free time.
           </p>
           <Button
             icon={<Download />}
             title="Download CV"
             value="Download CV"
-            url="https://drive.google.com/file/d/1WQQNIG46h532fjv0OfjTvVKkeLhfaXNW/view"
+            url="https://drive.google.com/file/d/1t0QpXzmOalCaNXvSdbBPuEMbPYLlaEdQ/view"
             externalURL
             onClick={() =>
               actionButton("Main button", 'Clik on button "Download CV"')
