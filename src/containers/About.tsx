@@ -47,7 +47,7 @@ const About = () => {
             icon={<Download />}
             title="Download CV"
             value="Download CV"
-            url="https://drive.google.com/file/d/1t0QpXzmOalCaNXvSdbBPuEMbPYLlaEdQ/view"
+            url="https://drive.google.com/file/d/1EjopcXAtDM_iHaUx1ZLX1HTxcbn5rY_-/view?usp=sharing"
             externalURL
             onClick={() =>
               actionButton("Main button", 'Clik on button "Download CV"')
