@@ -1,10 +1,10 @@
 import {
-  Globe,
   Cafe,
   LogoGithub,
   LogoLinkedin,
   LogoBehance,
   LogoInstagram,
+  Golf,
 } from "react-ionicons";
 import cross_platform from "../assets/imgs/skills/multi-plataform.svg";
 import project from "../assets/imgs/skills/project.svg";
@@ -18,17 +18,24 @@ export const secondaryButton = [
   //   url: "https://www.369labstech.com",
   //   externalURL: true,
   // },
-  {
-    icon: <Globe />,
-    value: "VYR-X APP",
-    title: "Last project",
-    url: "vyrx-app",
-  },
+  // {
+  //   icon: <Globe />,
+  //   value: "VYR-X APP",
+  //   title: "Last project",
+  //   url: "vyrx-app",
+  // },
   {
     icon: <Cafe />,
     value: "Stay Focus",
-    title: "Coding",
+    title: "Last project",
     url: "https://github.com/rafavilomar/stay-focus",
+    externalURL: true,
+  },
+  {
+    icon: <Golf />,
+    value: "#100DaysOfCode",
+    title: "See my progreess",
+    url: "https://www.notion.so/100DaysOfCode-by-rafavilomar-41820e3eb1db40c197135ae55248a7d0",
     externalURL: true,
   },
 ];
