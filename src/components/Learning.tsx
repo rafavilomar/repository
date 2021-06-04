@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/styles/components/learning.scss";
-import learning from "../assets/imgs/learning/npm.jpg";
+import learning from "../assets/imgs/learning/webpack.jpg";
 
 const Learning = () => {
   return (
@@ -8,7 +8,7 @@ const Learning = () => {
       <h3 className="txt subtitle">Learning...</h3>
       <img src={learning} alt="learning" />
       <p className="txt body">
-        Node Package Manager (npm) is a package manager for the javascript runtime enviroment Node.js
+        Webpack is an open-source Javascript module bundler for prepare our code to production. 
       </p>
     </div>
   );
