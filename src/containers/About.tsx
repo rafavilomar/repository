@@ -10,7 +10,7 @@ import { actionButton } from "../helpers/analytics";
 import Square from "../components/lazy/Square";
 import Learning from "../components/Learning";
 
-import profile from "../assets/imgs/brand/profile.jpg";
+import profile from "../assets/imgs/brand/profile.jpeg";
 import Button from "../components/Button";
 import { Download } from "react-ionicons";
 

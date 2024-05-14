@@ -2,8 +2,6 @@ import {
   Cafe,
   LogoGithub,
   LogoLinkedin,
-  LogoBehance,
-  LogoInstagram,
   Golf,
 } from "react-ionicons";
 import cross_platform from "../assets/imgs/skills/multi-plataform.svg";
@@ -52,27 +50,7 @@ export const shortButton = [
     title: "Linkedin profile",
     url: "https://www.linkedin.com/in/rafavilomar/",
     externalURL: true,
-  },
-  {
-    icon: <LogoBehance />,
-    title: "Behance profile",
-    url: "https://www.behance.net/rafaelvilomar",
-    externalURL: true,
-  },
-  // {
-  //   icon: <Download />,
-  //   title: "Download CV",
-  //   url:
-  //     "https://drive.google.com/file/d/1WQQNIG46h532fjv0OfjTvVKkeLhfaXNW/view",
-  //   externalURL: true,
-  // },
-  {
-    icon: <LogoInstagram />,
-    title: "Instagram profile",
-    url:
-      "https://www.instagram.com/rafavilomar/",
-    externalURL: true,
-  },
+  }
 ];
 
 export const skills = [

@@ -18,11 +18,11 @@ const Projects = () => {
     <>
       <Header />
       <section className="projects">
-        {projectList.map((project) => (
+        {/* {projectList.map((project) => (
           <Suspense key={project.id} fallback={<Square secondaryClass='cardProject' />}>
             <CardProject key={project.id} project={project} />
           </Suspense>
-        ))}
+        ))} */}
       </section>
       <Contacme />
     </>
