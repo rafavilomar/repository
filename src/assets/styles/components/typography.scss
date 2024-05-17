@@ -43,8 +43,16 @@
   color: $textColor-secondary;
   font-style: normal;
   font-weight: normal;
-  font-size: 22px;
-  // line-height: 22px;
+  font-size: 18px;
+  word-spacing: 2px;
+}
+
+.body_important {
+  font-family: $font-primary;
+  color: $textColor-secondary;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
   word-spacing: 2px;
 }
 

@@ -9,7 +9,6 @@
   > img {
     border-radius: 30px;
     width: 100%;
-    // min-height: 400px;
     object-fit: cover;
   }
   >span {
@@ -42,6 +41,11 @@
   flex-direction: column;
   gap: 40px;
 
+  .project-image{
+    width: 100%;
+    border-radius: 10px;
+  }
+
   > div {
     > h4 {
       margin-bottom: 10px;
@@ -51,19 +55,18 @@
     gap: 10px;
     margin: auto;
   }
+
+  .element-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
 }
 
 @media only screen and (min-width: 900px) {
   .project {
-    width: 80%;
     margin: auto;
 
-    > img {
-      border-radius: 30px;
-      width: 100%;
-      min-height: 400px;
-      object-fit: cover;
-    }
     >span {
       border-radius: 30px;
       height: 500px;
@@ -72,9 +75,17 @@
   .project-section {
     padding: 40px 0px;
     gap: 50px;
+    width: 100%;
+
+    .project-image{
+      border-radius: 10px;
+      width: 100%;
+      min-height: 400px;
+      object-fit: cover;
+    }
 
     > div {
-      width: 40vw;
+      max-width: 100%;
     }
   }
 }

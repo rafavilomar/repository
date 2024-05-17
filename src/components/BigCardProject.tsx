@@ -4,14 +4,23 @@ import "../assets/styles/components/cardProject.scss";
 import { projectList } from "../helpers/projects";
 
 const BigCardProject = () => {
-  return (
-    <Link to={`/${projectList[1].id}`} className="bigCardProject">
-      <div>
-        <h4 className="txt mainTitle-secondary">Vyr-x App</h4>
-        <h5 className="txt secondaryTitle">- {projectList[1].date}</h5>
-      </div>
-      <img src={projectList[1].presentationImg} alt="presentation" />
-    </Link>
-  );
+  return (<section className="featuredProjects">
+    {projectList.map(project => (
+      <Link to={`/${project.id}`} className="bigCardProject">
+        <div className="presentation">
+          <img src={project.presentationImg} alt="presentation" />
+        </div>
+        <div className="information">
+          <h4 className="txt mainTitle-secondary">{project.name}</h4>
+          <p className="txt secondaryTitle">{project.description}</p>
+          <div className="information__technologies">
+            {project.tools.map(tool => (
+              <span>{tool}</span>
+            ))}
+          </div>
+        </div>
+      </Link>
+    ))}
+  </section>);
 };
 export default BigCardProject;

@@ -17,7 +17,7 @@ const StayFocus = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.title = "Stay Focus | Rafael Vilomar";
-    setProjectDetails(projectList[2]);
+    setProjectDetails(projectList[3]);
     ReactGA.pageview("/stay-focus");
   }, []);
 

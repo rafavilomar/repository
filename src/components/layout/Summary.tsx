@@ -42,9 +42,11 @@ const Summary: React.FC<props> = ({
       </div>
       <div>
         <h4 className="txt subtitle">Tools</h4>
-        {tools.map((e) => (
-          <p className="txt body">{e}</p>
-        ))}
+        <ul className="tools">
+          {tools.map((e) => (
+            <li className="txt body">{e}</li>
+          ))}
+        </ul>
       </div>
       <div className="actions">
         {behance && (

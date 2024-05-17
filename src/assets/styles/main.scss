@@ -26,9 +26,10 @@ a {
   text-decoration: none;
   color: none;
 }
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 1000px) {
   body {
-    margin: 0px 85px;
+    width: 900px;
+    margin: auto;
   }
 }
 

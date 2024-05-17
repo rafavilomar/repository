@@ -17,7 +17,7 @@ const Vyrx_app = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.title = "VYR-X APP | Rafael Vilomar";
-    setProjectDetails(projectList[1]);
+    setProjectDetails(projectList[2]);
     ReactGA.pageview("/vyrx-app");
   }, []);
 

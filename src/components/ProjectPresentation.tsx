@@ -64,10 +64,11 @@ const ProjectPresentation: React.FC<props> = ({
           )}
         </div>
       </div>
-      {/* <img src={img} alt="presentation" /> */}
-            <Suspense fallback={<Square />}>
-              <Imagen src={img} alt="presentation" />
-            </Suspense>
+      {img && (
+        <Suspense fallback={<Square />}>
+          <Imagen src={img} alt="presentation" />
+        </Suspense>
+      )}
     </section>
   );
 };
