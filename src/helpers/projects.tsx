@@ -1,8 +1,3 @@
-import _369labs__presentation from "../assets/imgs/projects/369labs/369labs-presentation.png";
-import _369labs__preview from "../assets/imgs/projects/369labs/369labs-preview.png";
-import _369labs_investor from "../assets/imgs/projects/369labs/investor-form.png"
-import _369labs_partner from "../assets/imgs/projects/369labs/partner-form.png"
-
 import _vyrx_app__presentation from "../assets/imgs/projects/vyrx_app/presentation.jpg";
 import _vyrx_app__preview from "../assets/imgs/projects/vyrx_app/preview.jpg";
 import _vyrx_app_home from "../assets/imgs/projects/vyrx_app/views/HOME.jpg"
@@ -34,6 +29,7 @@ import _stay_focus__theme_dark from '../assets/imgs/projects/stay_focus/views/TH
 import _chatting__presentation from "../assets/imgs/projects/chatting/chatting-presentation.png";
 
 import microservices__presentation from "../assets/imgs/projects/microservices/microservices-presentation.png";
+import microservices__preview from "../assets/imgs/projects/microservices/microservices-preview.png";
 import microservice__purchase_flow from "../assets/imgs/projects/microservices/purchase_flow.png";
 import microservice__login_flow from "../assets/imgs/projects/microservices/login_flow.png";
 
@@ -67,9 +63,9 @@ export const projectList: project[] = [
   {
     id: "springboot-microservices",
     name: "SpringBoot Microservices",
-    description: "An example of how to implement a microservice architecture based on Java technologies. The purpose is to show how I would handle different kind of communications for microservice looking for better performance and the perfect tools depending on the context.",
-    previewImg: null,
-    presentationImg: microservices__presentation,
+    description: "An example of how to implement a microservice architecture based on Java technologies handling different kind of communications for microservice looking for better performance and the perfect tools depending on the context.",
+    previewImg: microservices__presentation,
+    presentationImg: microservices__preview,
     github: "https://github.com/rafavilomar/microservices-java",
     category: "Backend",
     role: ["Backend Developer"],

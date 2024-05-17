@@ -2,7 +2,7 @@ import React from "react";
 import ReactGA from 'react-ga' 
 
 import "../assets/styles/container/home.scss";
-import BigCardProject from "../components/BigCardProject";
+import Projects from "../components/Projects";
 import Contacme from "../components/layout/Contacme";
 
 import Header from "../components/layout/Header";
@@ -23,7 +23,7 @@ const Home = () => {
       <Presentation />
       <div style={{ position: "relative", top: "100vh" }}>
         <Skills />
-        <BigCardProject/>
+        <Projects/>
         <Contacme />
       </div>
     </>

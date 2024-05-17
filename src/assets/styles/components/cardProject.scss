@@ -1,19 +1,53 @@
 @import "../main.scss";
 
-.featuredProjects {
+.project-list {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
 }
+
 
 .bigCardProject {
   display: flex;
   flex-direction: column;
   padding: 30px 20px;
   background: rgba($bg-secondary, 0.66);
-  border-radius: 30px;
+  border-radius: 15px;
   gap: 20px;
+
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0px;
+
+    img {
+      border-radius: 10px;
+      min-height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .information__technologies {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+  }
+
+  div {
+    display: flex;
+    gap: 5px;
+  }
 }
+
 .bigCardProject:hover {
   background-color: $bg-secondary;
 }
@@ -76,6 +110,7 @@
 }
 
 @media only screen and (min-width: 450px) {
+
   .cardProject {
     max-height: 750px;
     max-width: 500px;
@@ -88,42 +123,13 @@
 
 @media only screen and (min-width: 900px) {
   .bigCardProject {
-    // margin-top: 100px;
-    display: flex;
     flex-direction: row;
     padding: 30px 20px;
-    background: rgba($bg-secondary, 0.66);
     border-radius: 30px;
-    gap: 80px;
+    gap: 40px;
 
     .presentation {
       width: 40%;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      margin: 0px;
-
-      img {
-        border-radius: 15px;
-      }
-    }
-
-    .information {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-
-      .information__technologies {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-    }
-
-    div {
-      display: flex;
-      gap: 5px;
     }
   }
 }

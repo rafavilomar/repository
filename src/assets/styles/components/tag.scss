@@ -1,0 +1,12 @@
+@import "../main.scss";
+
+.tag {
+    padding: 5px 10px;
+    background-color: rgba($color: $textColor-secondary, $alpha: 0.1);
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: $font-primary;
+    color: $textColor-secondary;
+}
