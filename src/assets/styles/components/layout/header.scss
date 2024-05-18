@@ -3,7 +3,8 @@
 .header-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 40px;
   align-items: center;
   padding: 0px;
   list-style: none;
@@ -36,12 +37,10 @@
   }
 }
 
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 1000px) {
   .header-list {
-    justify-content: flex-end;
-    gap: 40px;
-    left: 500px;
-    right: 500px;
+    max-width: 900px;
+    margin: auto;
   }
   .header-list__item {
     font-size: 18px;

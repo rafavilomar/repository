@@ -15,19 +15,9 @@ const Header = () => {
             </Link>
           </li>
           <li className="header-list__item">
-            <Link to="/projects">
-              <span>Projects</span>
-            </Link>
-          </li>
-          <li className="header-list__item">
             <Link to="/about">
               <span>About</span>
             </Link>
-          </li>
-          <li className="header-list__item">
-            <a href="mailto:rafavilomar@gmail.com"  target="_blank" rel='noreferrer'>
-              <span>Contact</span>
-            </a>
           </li>
         </ul>
       </nav>
