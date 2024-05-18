@@ -8,7 +8,7 @@ import Contacme from "../components/layout/Contacme";
 import Header from "../components/layout/Header";
 import { actionButton } from "../helpers/analytics";
 import Square from "../components/lazy/Square";
-import Learning from "../components/Learning";
+import TechStack from "../components/TechStack";
 
 import profile from "../assets/imgs/brand/profile.jpeg";
 import Button from "../components/Button";
@@ -31,23 +31,18 @@ const About = () => {
         </Suspense>
         <div>
           <h2 className="txt mainTitle-secondary">Rafael Vilomar</h2>
-          <h3 className="txt secondaryTitle">{`Designer & front-end developer`}</h3>
+          <h3 className="txt secondaryTitle">Software Engineer</h3>
           <p className="txt body">
-            {`Designer & Front-end Developer with experience of applications and web pages, creating responsive interfaces and improving the user experience.`}
+            I'm a software engineer with a passion for leveraging cutting-edge technologies and implementing innovative solutions, I thrive in dynamic and challenging environments.
           </p>
           <p className="txt body">
-            Love UI / UX design and create products using tools like: Figma,
-            ReactJS and React Native.
-          </p>
-          <p className="txt body">
-            I'm also studying software engineering at UAPA, front-end technology
-            at Platzi, and challenging my skills in my free time.
+            Throughout my career, I have demonstrated expertise in designing and building web platforms and applications. My strong background in microservice architecture has enabled me to handle complex and large projects. I have a proven track record of analyzing requirements, leading sub-projects, and delivering comprehensive documentation to ensure seamless collaboration across teams and stakeholders.
           </p>
           <Button
             icon={<Download />}
             title="Download CV"
             value="Download CV"
-            url="https://drive.google.com/file/d/1EjopcXAtDM_iHaUx1ZLX1HTxcbn5rY_-/view?usp=sharing"
+            url="https://drive.google.com/file/d/1zD5dIk9kFFaL_L5_ftexR7fUJ6ea4vkS/view?usp=sharing"
             externalURL
             onClick={() =>
               actionButton("Main button", 'Clik on button "Download CV"')
@@ -57,7 +52,7 @@ const About = () => {
       </section>
       <section className="listAbout">
         <ClientList />
-        <Learning />
+        <TechStack />
       </section>
       <Contacme />
     </>

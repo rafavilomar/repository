@@ -1,13 +1,13 @@
 import React from "react";
 import "../assets/styles/components/clientList.scss";
-import { learning } from "../helpers/about";
+import { Experiences } from "../helpers/about";
 
 const ClientList = () => {
   return (
     <div>
       <ul className="clientList">
         <h3 className="txt subtitle">History</h3>
-        {learning.map((e) => (
+        {Experiences.map((e) => (
           <li className="clientList__item" key={e.title}>
             <div>
               <h6 className="txt subtitle">{e.client}</h6>

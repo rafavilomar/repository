@@ -1,26 +1,26 @@
 @import "../main.scss";
 
-.learning {
+.tech-stack {
   display: flex;
   flex-direction: column;
   gap: 20px;
 
-  > img {
-    width: 100%;
-    object-fit: cover;
-    height: 265px;
-    border-radius: 30px;
+  > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
   }
 }
 
 @media only screen and (min-width: 450px) {
-  .learning {
+  .tech-stack {
     min-width: 35vw;
   }
 }
 
 @media only screen and (min-width: 900px) {
-  .learning {
+  .tech-stack {
     min-width: 400px;
     width: 400px;
   }
