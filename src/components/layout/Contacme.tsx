@@ -10,8 +10,26 @@ import IconButton from "../IconButton";
 const Contacme = () => {
   return (
     <section className="contacme">
-      <h3 className="txt secondaryTitle">Need help with your project?</h3>
-      <div>
+      <div className="contactme_reachOut">
+        <h3 className="txt secondaryTitle">Reach me out</h3>
+        <div className="social" >
+          {shortButton.map((e) => (
+            <IconButton
+              key={e.title}
+              icon={e.icon}
+              url={e.url}
+              title={e.title}
+              externalURL={e.externalURL}
+              style={{ height: 45, width: 45 }}
+              ttDirection='down'
+              ttValue={e.title}
+              onClick={() => e.onClick()}
+            />
+          ))}
+        </div>
+
+      </div>
+      {/* <div>
         <p className="txt subtitle">
           Occasionally, I am available to carry out projects as a freelancer.
         </p>
@@ -26,24 +44,8 @@ const Contacme = () => {
         onClick={() =>
           actionButton("Main button", 'Clik on button "Contac me"')
         }
-      />
-      <div className="social" >
-      {shortButton.map((e) => (
-        <IconButton
-          key={e.title}
-          icon={e.icon}
-          url={e.url}
-          title={e.title}
-          externalURL={e.externalURL}
-          style={{height: 45, width: 45}}
-          ttDirection='down'
-          ttValue={e.title}
-          onClick={() =>
-            actionButton("Icon button", e.title)
-          }
-        />
-      ))}
-      </div>
+      /> */}
+      <p className="txt body">© Rafael Vilomar 2024</p>
     </section>
   );
 };

@@ -42,12 +42,12 @@
 
   .tooltiptext {
     visibility: hidden;
-    width: 120px;
+    min-width: 120px;
     background-color: $bg-alt;
     color: $textColor-primary;
     font-family: $font-primary;
     font-size: 14px;
-    padding: 5px 5px;
+    padding: 5px 10px;
     border-radius: 6px;
 
     position: absolute;
