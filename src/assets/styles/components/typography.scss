@@ -10,7 +10,9 @@
   letter-spacing: 2px;
   font-size: 36px;
   line-height: auto;
-  color: $textColor-primary;
+  background: $bg-alt;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .mainTitle-secondary {
   font-family: $font-secondary;

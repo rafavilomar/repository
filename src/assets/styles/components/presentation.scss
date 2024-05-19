@@ -10,11 +10,12 @@
     height: 150px;
     width: 150px;
     border-radius: 100%;
-    border-style: solid;
-    border-width: 5px;
-    border-color: $bg-alt;
     box-sizing: border-box;
-  }
+
+    box-shadow: 1px 1px 31px -5px rgba(63,15,255,0.75);
+    -webkit-box-shadow: 1px 1px 31px -5px rgba(63,15,255,0.75);
+    -moz-box-shadow: 1px 1px 31px -5px rgba(63,15,255,0.75);
+  }    
 
   .information {
     display: flex;

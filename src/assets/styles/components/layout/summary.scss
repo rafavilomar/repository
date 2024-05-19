@@ -4,7 +4,7 @@
   border-radius: 10px;
   padding: 20px;
   width: 100%;
-  background-color: $bg-secondary;
+  background: rgba($bg-secondary, 0.66);
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;

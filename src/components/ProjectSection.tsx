@@ -38,6 +38,7 @@ const ProjectSection: React.FC<props> = ({section}) => {
                         value="Learn more..."
                         externalURL
                         url={section.learnMore}
+                        variant="secondary"
                     />
                 )} 
             </div>
