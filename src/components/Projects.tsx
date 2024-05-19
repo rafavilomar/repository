@@ -11,7 +11,7 @@ const Projects = () => {
       <div className="project-list">
         {projectList.map(project => (
           <Link to={`/${project.id}`} className="bigCardProject">
-            <div className="presentation">
+            <div className="project-presentation">
               <img src={project.presentationImg} alt="presentation" />
             </div>
             <div className="information">

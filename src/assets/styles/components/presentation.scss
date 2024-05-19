@@ -4,6 +4,7 @@
   bottom: 0px;
   gap: 19px;
   margin-top: 65px;
+  padding: 150px 0;
 
   .profile {
     height: 150px;
@@ -20,7 +21,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    gap: 80px;
+    gap: 30px;
   }
 
   .contact {
@@ -34,8 +35,21 @@
     gap: 20px;
   }
 }
-.presentation__details > p {
-  min-width: 500px;
+
+.presentation__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  > p {
+    max-width: 400px;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 450px) {
@@ -100,14 +114,16 @@
   }
   .presentation__details {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 60px;
+    justify-content: space-between;
+    width: 100%;
   }
   .presentation__details > div {
     display: flex;
     flex-direction: column;
   }
   .presentation__details > p {
-    max-width: 358px;
+    max-width: 500px;
   }
 }

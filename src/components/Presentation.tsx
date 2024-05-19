@@ -1,10 +1,9 @@
 import React from "react";
 
 import "../assets/styles/components/presentation.scss";
-import Button from "./Button";
 import profile from "../assets/imgs/brand/profile.jpeg";
 
-import { secondaryButton, shortButton } from "../helpers/home";
+import { shortButton } from "../helpers/home";
 import { actionButton } from "../helpers/analytics";
 import Images from "./layout/images";
 import IconButton from "./IconButton";
@@ -20,9 +19,9 @@ const Presentation = () => {
         <div className="presentation__details">
           <Images src={profile} alt="Profile" className="profile" />
           <p className="txt body">
-            I'm a software engineer with a passion for leveraging cutting-edge 
-            technologies and implementing innovative solutions, I thrive in dynamic 
-            and challenging environments.
+            I'm a Software Engineer, focus on Backend Development, with +4 years 
+            of experience with many clients and industries accross LATAM. 
+            My stack includes techs like NodeJS, SpringBoot and multiple databases.
           </p>
           <div className="contact">
             <h3 className="txt subtitle">
@@ -46,26 +45,7 @@ const Presentation = () => {
               ))}
             </section>
           </div>
-          {/* ===== Stay Focus and #100 Days of Code ===== */}
-          {/* <div>
-            {secondaryButton.map((e) => (
-              <Button
-                key={e.title}
-                value={e.value}
-                icon={e.icon}
-                url={e.url}
-                title={e.title}
-                variant="secondary"
-                externalURL={e.externalURL}
-                ttDirection='right'
-                ttValue={e.title}
-              />
-            ))}
-          </div> */}
         </div>
-        {/* <div className="presentation__action">
-          <Button value="Projects" url='/projects' onClick={()=> actionButton("Main button", 'Clik on button "Projects"')} />
-        </div> */}
       </div>
     </section>
   );
