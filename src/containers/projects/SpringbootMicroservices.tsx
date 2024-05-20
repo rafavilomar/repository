@@ -16,7 +16,7 @@ const SpringbootMicroservices = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.title = "SpringBoot Microservices | Rafael Vilomar";
-    setProjectDetails(projectList[1]);
+    setProjectDetails(projectList[0]);
     ReactGA.pageview("/springboot-microservices");
   }, []);
 

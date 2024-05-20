@@ -4,7 +4,11 @@
   bottom: 0px;
   gap: 19px;
   margin-top: 65px;
-  padding: 150px 0;
+  padding: 20px 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   .profile {
     height: 150px;
@@ -28,6 +32,7 @@
   .contact {
     display: flex;
     gap: 10px;
+    width: 100%;
   }
 
   .contact__options {
@@ -89,6 +94,7 @@
     flex-direction: row-reverse;
     justify-content: center;
     bottom: 65px;
+    min-height: 550px;
 
     .brand{
         min-width: 400px;
@@ -111,6 +117,10 @@
 
     .information {
         justify-content: center;
+    }
+    
+    .contact {
+      width: auto;
     }
   }
   .presentation__details {

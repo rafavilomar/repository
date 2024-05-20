@@ -35,32 +35,6 @@ import microservice__login_flow from "../assets/imgs/projects/microservices/logi
 
 export const projectList: project[] = [
   {
-    id: "chatting",
-    name: "Chatting",
-    description: "Chatting is room to connect people on a global chat. Every one will be able to talk to every online users with just an username.",
-    previewImg: _chatting__presentation,
-    presentationImg: _chatting__presentation,
-    category: "Full-Stack",
-    role: ["Full-Stack"],
-    date: "2022",
-    live: 'https://chatting-frontend.vercel.app/',
-    github: "https://github.com/rafavilomar/chatting-backend",
-    tools: ["TypeScript", "ReactJS", "NodeJS", "MongoDB", "Socket.io", "Docker"],
-    section: [
-      {
-        image: [{ src: _chatting__presentation, alt: 'General Diagram' }],
-        title: "About",
-        paragraphs: [
-          "Chatting is room to connect people on a global chat. Every one will be able to talk to every online users with just an username and password.",
-          "This project is using Socket to mantain a real time communication between client (ReactJS) and server (NodeJS)."
-        ],
-        col: 1,
-        colxl: 1,
-
-      }
-    ]
-  },
-  {
     id: "springboot-microservices",
     name: "SpringBoot Microservices",
     description: "An example of how to implement a microservice architecture based on Java technologies handling different kind of communications for microservice looking for better performance and the perfect tools depending on the context.",
@@ -138,6 +112,32 @@ export const projectList: project[] = [
           ]
         },
         learnMore: "https://github.com/rafavilomar/microservices-java/blob/main/docs/features/implement_jwt.md"
+      }
+    ]
+  },
+  {
+    id: "chatting",
+    name: "Chatting",
+    description: "Chatting is room to connect people on a global chat. Every one will be able to talk to every online users with just an username.",
+    previewImg: _chatting__presentation,
+    presentationImg: _chatting__presentation,
+    category: "Full-Stack",
+    role: ["Full-Stack"],
+    date: "2022",
+    live: 'https://chatting-frontend.vercel.app/',
+    github: "https://github.com/rafavilomar/chatting-backend",
+    tools: ["TypeScript", "ReactJS", "NodeJS", "MongoDB", "Socket.io", "Docker"],
+    section: [
+      {
+        image: [{ src: _chatting__presentation, alt: 'General Diagram' }],
+        title: "About",
+        paragraphs: [
+          "Chatting is room to connect people on a global chat. Every one will be able to talk to every online users with just an username and password.",
+          "This project is using Socket to mantain a real time communication between client (ReactJS) and server (NodeJS)."
+        ],
+        col: 1,
+        colxl: 1,
+
       }
     ]
   },

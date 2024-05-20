@@ -16,7 +16,7 @@ const Chatting = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.title = "Chatting | Rafael Vilomar";
-    setProjectDetails(projectList[0]);
+    setProjectDetails(projectList[1]);
     ReactGA.pageview("/chatting");
   }, []);
 

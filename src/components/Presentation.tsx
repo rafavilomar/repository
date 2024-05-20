@@ -19,8 +19,8 @@ const Presentation = () => {
         <div className="presentation__details">
           <Images src={profile} alt="Profile" className="profile" />
           <p className="txt body">
-            I'm a Software Engineer, focus on Backend Development, with +4 years 
-            of experience with many clients and industries accross LATAM. 
+            I'm a Software Engineer, focused on Backend Development, with +4 years 
+            of experience with many clients and industries in LATAM. 
             My stack includes techs like NodeJS, SpringBoot and multiple databases.
           </p>
           <div className="contact">
