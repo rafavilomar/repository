@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React from "react";
 import ReactGA from "react-ga";
 import "../../assets/styles/container/projects/369labs.scss";
 

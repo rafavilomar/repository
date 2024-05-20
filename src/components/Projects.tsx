@@ -9,8 +9,8 @@ const Projects = () => {
     <section className="projects">
       <h3 className="projects-title txt mainTitle-secondary">Projects</h3>
       <div className="project-list">
-        {projectList.map(project => (
-          <Link to={`/${project.id}`} className="bigCardProject">
+        {projectList.map((project, index) => (
+          <Link to={`/${project.id}`} className="bigCardProject" key={index}>
             <div className="project-presentation">
               <img src={project.presentationImg} alt="presentation" />
             </div>
@@ -18,7 +18,7 @@ const Projects = () => {
               <h4 className="txt subtitle">{project.name}</h4>
               <p className="txt body">{project.description}</p>
               <div className="information__technologies">
-                {project.tools.map(tool => <Tag content={tool} />)}
+                {project.tools.map(tool => <Tag content={tool} key={tool} />)}
               </div>
             </div>
           </Link>

@@ -22,14 +22,14 @@ const ProjectSection: React.FC<props> = ({section}) => {
                         <Imagen src={image.src} alt={image.alt} key={image.alt} className="project-image" />
                     </Suspense>
                 ))}
-                {section.paragraphs.map((e) => (
-                    <p className="txt body"> {e} </p>
+                {section.paragraphs.map((e, index) => (
+                    <p key={index} className="txt body"> {e} </p>
                 ))}
                 {section.list && (
                     <div>
                         {section.list.title && (<h6 className="txt body_important">{section.list.title}</h6>)}
                         <ul className="element-list">
-                            {section.list.elements.map(e => (<li className="txt body">{e}</li>))}
+                            {section.list.elements.map((e, index) => (<li key={index} className="txt body">{e}</li>))}
                         </ul>
                     </div>
                 )}

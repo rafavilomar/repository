@@ -7,8 +7,8 @@ const ClientList = () => {
     <div>
       <ul className="clientList">
         <h3 className="txt subtitle">History</h3>
-        {Experiences.map((e) => (
-          <li className="clientList__item" key={e.title}>
+        {Experiences.map((e, index) => (
+          <li className="clientList__item" key={index}>
             <div>
               <h6 className="txt subtitle">{e.client}</h6>
               <p className="txt body">{e.title}</p>

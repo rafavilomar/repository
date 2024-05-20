@@ -36,14 +36,14 @@ const Vyrx_app = () => {
       <section className="project-section">
         <div>
           <h4 className="txt subtitle">{projectDetails?.section[0].title}</h4>
-          {projectDetails?.section[0].paragraphs.map((e) => (
-            <p className="txt body"> {e} </p>
+          {projectDetails?.section[0].paragraphs.map((e, index) => (
+            <p key={index} className="txt body"> {e} </p>
           ))}
         </div>
         <div>
           <h4 className="txt subtitle">{projectDetails?.section[1].title}</h4>
-          {projectDetails?.section[1].paragraphs.map((e) => (
-            <p className="txt body"> {e} </p>
+          {projectDetails?.section[1].paragraphs.map((e, index) => (
+            <p key={index} className="txt body"> {e} </p>
           ))}
         </div>
         <section className="vyrx_app-sketchs">
@@ -68,8 +68,8 @@ const Vyrx_app = () => {
       <section className="project-section">
         <div>
           <h4 className="txt subtitle">{projectDetails?.section[2].title}</h4>
-          {projectDetails?.section[2].paragraphs.map((e) => (
-            <p className="txt body"> {e} </p>
+          {projectDetails?.section[2].paragraphs.map((e, index) => (
+            <p key={index} className="txt body"> {e} </p>
           ))}
         </div>
         <section className="vyrx_app-screens">

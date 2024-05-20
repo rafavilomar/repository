@@ -1,6 +1,6 @@
 import { LogoDocker, LogoJavascript, LogoNodejs, LogoReact } from "react-ionicons";
-import { SiSpringboot, SiMongodb, SiMysql, SiTypescript } from "react-icons/si";
-import { BiLogoPostgresql, BiLogoAws, BiLogoJava } from "react-icons/bi";
+import { SiSpringboot, SiMongodb, SiTypescript } from "react-icons/si";
+import { BiLogoPostgresql, BiLogoAws } from "react-icons/bi";
 import { RiJavaLine } from "react-icons/ri";
 import { TbBrandMysql } from "react-icons/tb";
 

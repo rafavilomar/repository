@@ -1,9 +1,6 @@
 import React from "react";
 import "../../assets/styles/components/layout/contacme.scss";
 
-import { Mail } from "react-ionicons";
-import Button from "../Button";
-import { actionButton } from "../../helpers/analytics";
 import { shortButton } from "../../helpers/home";
 import IconButton from "../IconButton";
 
