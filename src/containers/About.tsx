@@ -33,10 +33,13 @@ const About = () => {
           <h2 className="txt mainTitle-secondary">Rafael Vilomar</h2>
           <h3 className="txt secondaryTitle">Software Engineer</h3>
           <p className="txt body">
-            I'm a software engineer with a passion for leveraging cutting-edge technologies and implementing innovative solutions, I thrive in dynamic and challenging environments.
+            Hello! I'm Rafael Vilomar, a dedicated Software Engineer with a passion for backend development. Over the years, I've honed my skills in various frameworks and tools, including NodeJS, Express, NestJS, Redis, MongoDB, and Spring Boot, among others. My expertise also extends to developing and maintaining microservices architectures, ensuring scalability, security, and efficiency.
           </p>
           <p className="txt body">
-            Throughout my career, I have demonstrated expertise in designing and building web platforms and applications. My strong background in microservice architecture has enabled me to handle complex and large projects. I have a proven track record of analyzing requirements, leading sub-projects, and delivering comprehensive documentation to ensure seamless collaboration across teams and stakeholders.
+            Currently, I work as a Senior Software Engineer at Stefanini with a high projects ownership for diverse clients.
+          </p>
+          <p className="txt body">
+            On this website, I plan to show my knowledge through different side projects.
           </p>
           <Button
             icon={<Download />}
