@@ -23,13 +23,13 @@
     border-style: solid;
 
     @if $horizontal == 100% {
-      border-color: transparent transparent transparent $bg-alt; 
+      border-color: transparent transparent transparent $textColor-secondary; 
     } @else if $horizontal == -10px {
-      border-color: transparent $bg-alt transparent transparent ; 
+      border-color: transparent $textColor-secondary transparent transparent ; 
     } @else if $vertical == 115% {
-      border-color: $bg-alt transparent transparent transparent ; 
+      border-color: $textColor-secondary transparent transparent transparent ; 
     }@else if $vertical == -15% {
-      border-color: transparent transparent $bg-alt transparent ; 
+      border-color: transparent transparent $textColor-secondary transparent ; 
     }
 }
 .btn {
@@ -42,12 +42,13 @@
 
   .tooltiptext {
     visibility: hidden;
-    width: 120px;
-    background-color: $bg-alt;
+    min-width: 120px;
+    background-color: $bg-secondary;
+    border: 1px $textColor-secondary solid;
     color: $textColor-primary;
     font-family: $font-primary;
     font-size: 14px;
-    padding: 5px 5px;
+    padding: 5px 10px;
     border-radius: 6px;
 
     position: absolute;
@@ -58,32 +59,17 @@
   .left {
     right: 115%;
   }
-  .left::after {
-    @include arrow(50%, 100% )
-  }
   .right {
     left: 115%;
-  }
-  .right::after {
-    @include arrow(50%, -10px )
   }
   .left {
     right: 115%;
   }
-  .left::after {
-    @include arrow(50%, 100% )
-  }
   .top {
     top: -100%;
   }
-  .top::after {
-    @include arrow(115%, 45% )
-  }
   .down {
     top: 115%;
-  }
-  .down::after {
-    @include arrow(-15%, 45% )
   }
 }
 .btn:focus {
@@ -103,32 +89,36 @@
   gap: 10px;
   align-items: center;
   padding: 10px 20px;
-  background-color: $bg-alt;
+  background: $bg-alt;
   min-width: 180px;
   color: $textColor-primary;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 16px;
   @include icon($textColor-primary);
 }
 .btn-primary:hover {
-  background-color: rgba($color: $bg-alt, $alpha: 0.8);
+  transform: scale(1.02);
+  transition-duration: 0.5s;
 }
 
 .btn-secondary {
   display: flex;
   flex-direction: row;
-  gap: 10px;
   justify-content: center;
+  gap: 10px;
   align-items: center;
-  padding: 5px 15px;
-  background-color: transparent;
-  font-weight: normal;
+  padding: 10px 20px;
+  background-color: rgba($color: $textColor-secondary, $alpha: 0.1);
+  min-width: 180px;
+  color: $textColor-primary;
+  font-weight: bolder;
   font-size: 16px;
-  color: $textColor-secondary;
-  @include icon($textColor-secondary);
+  @include icon($textColor-primary);
+  border: 1px $textColor-secondary solid;
+  box-sizing: border-box;
 }
 .btn-secondary:hover {
-  background-color: rgba($color: $textColor-secondary, $alpha: 0.1);
+  background-color: rgba($color: $textColor-secondary, $alpha: 0.3);
 }
 
 // Icon buttons

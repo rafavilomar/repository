@@ -1,68 +1,60 @@
 @import "../main.scss";
 
 .presentation {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  position: absolute;
-  top: 0px;
-  left: 35px;
-  right: 35px;
   bottom: 0px;
   gap: 19px;
-  padding: 20px 0px;
-  margin-top: 65px;
+  padding: 20px 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  .brand {
-    background-image: url('../../imgs//brand//brand-dark.png');
-    background-size: cover;
-    min-height: 200px;
-    min-width: 200px;
-    margin: auto;
-    position: relative;
-    img {
-      object-fit: cover;
-      width: 100%;
-      z-index: 1000;
-    }
-    padding: 5px;
-  }
-  .first {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: auto;
-    right: -10px;
-    top: -10px;
-    bottom: auto;
-    z-index: -100;
-    background-color: $bg-alt;
-    filter: blur(12px);
-    border-radius: 50%;
-  }
-  .second {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: -7px;
-    right: auto;
-    top: auto;
-    bottom: -10px;
-    z-index: -100;
-    background-color: $bg-alt;
-    filter: blur(12px);
-    border-radius: 50%;
-  }
+  .profile {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    box-sizing: border-box;
+
+    box-shadow: 1px 1px 31px -5px rgba(63,15,255,0.75);
+    -webkit-box-shadow: 1px 1px 31px -5px rgba(63,15,255,0.75);
+    -moz-box-shadow: 1px 1px 31px -5px rgba(63,15,255,0.75);
+  }    
 
   .information {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    gap: 19px;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .contact {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .contact__options {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
   }
 }
-.presentation__details > div {
-  display: none;
+
+.presentation__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  > p {
+    max-width: 400px;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 450px) {
@@ -98,9 +90,10 @@
 
 @media only screen and (min-width: 900px) {
   .presentation {
-      flex-direction: row-reverse;
+    flex-direction: row-reverse;
     justify-content: center;
     bottom: 65px;
+    min-height: 650px;
 
     .brand{
         min-width: 400px;
@@ -124,18 +117,23 @@
     .information {
         justify-content: center;
     }
+    
+    .contact {
+      width: auto;
+    }
   }
   .presentation__details {
     display: flex;
-    align-items: flex-start;
-    max-width: 620px;
-    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
   }
   .presentation__details > div {
     display: flex;
     flex-direction: column;
   }
   .presentation__details > p {
-    max-width: 358px;
+    max-width: 500px;
   }
 }

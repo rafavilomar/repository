@@ -3,9 +3,8 @@
 .summary {
   border-radius: 10px;
   padding: 20px;
-  margin: auto;
   width: 100%;
-  background-color: $bg-secondary;
+  background: rgba($bg-secondary, 0.66);
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
@@ -28,6 +27,17 @@
     padding: 40px;
     gap: 40px;
     border-radius: 20px;
-    width: 40vw;
+    
+    .tools {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+      
+      > li {
+        min-width: 40%;
+        margin-right: 20px;
+      }
+    }
   }
 }

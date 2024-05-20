@@ -32,8 +32,8 @@ const Summary: React.FC<props> = ({
       </div>
       <div>
         <h4 className="txt subtitle">Role</h4>
-        {role.map((e) => (
-          <p className="txt body">{e}</p>
+        {role.map((e, index) => (
+          <p key={index} className="txt body">{e}</p>
         ))}
       </div>
       <div>
@@ -42,9 +42,11 @@ const Summary: React.FC<props> = ({
       </div>
       <div>
         <h4 className="txt subtitle">Tools</h4>
-        {tools.map((e) => (
-          <p className="txt body">{e}</p>
-        ))}
+        <ul className="tools">
+          {tools.map((e, index) => (
+            <li key={index} className="txt body">{e}</li>
+          ))}
+        </ul>
       </div>
       <div className="actions">
         {behance && (

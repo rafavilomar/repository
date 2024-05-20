@@ -2,13 +2,13 @@ import {
   Cafe,
   LogoGithub,
   LogoLinkedin,
-  LogoBehance,
-  LogoInstagram,
   Golf,
+  Mail,
 } from "react-ionicons";
 import cross_platform from "../assets/imgs/skills/multi-plataform.svg";
 import project from "../assets/imgs/skills/project.svg";
 import ux_ui from "../assets/imgs/skills/ux-ui.svg";
+import { actionButton } from "./analytics";
 
 export const secondaryButton = [
   // {
@@ -42,37 +42,25 @@ export const secondaryButton = [
 
 export const shortButton = [
   {
+    icon: <Mail />,
+    title: "Copy rafavilomar@gmail.com",
+    externalURL: false,
+    onClick: () => navigator.clipboard.writeText("rafavilomar@gmail.com")
+  },
+  {
     icon: <LogoGithub />,
     title: "Github profile",
     url: "https://github.com/rafavilomar",
     externalURL: true,
+    onClick: () => actionButton("Icon button", "Github profile")
   },
   {
     icon: <LogoLinkedin />,
     title: "Linkedin profile",
     url: "https://www.linkedin.com/in/rafavilomar/",
     externalURL: true,
-  },
-  {
-    icon: <LogoBehance />,
-    title: "Behance profile",
-    url: "https://www.behance.net/rafaelvilomar",
-    externalURL: true,
-  },
-  // {
-  //   icon: <Download />,
-  //   title: "Download CV",
-  //   url:
-  //     "https://drive.google.com/file/d/1WQQNIG46h532fjv0OfjTvVKkeLhfaXNW/view",
-  //   externalURL: true,
-  // },
-  {
-    icon: <LogoInstagram />,
-    title: "Instagram profile",
-    url:
-      "https://www.instagram.com/rafavilomar/",
-    externalURL: true,
-  },
+    onClick: () => actionButton("Icon button", "Linkedin profile")
+  }
 ];
 
 export const skills = [

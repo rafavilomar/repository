@@ -3,7 +3,8 @@
 .header-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 40px;
   align-items: center;
   padding: 0px;
   list-style: none;
@@ -11,9 +12,15 @@
   padding: 0px 35px;
   z-index: 500;
   position: fixed;
+  top: 0px;
   left: 35px;
   right: 35px;
   background-color: $bg-primary;
+
+  span {
+    padding: 2px;
+    border-radius: 5px;
+  }
 }
 
 .header-list__item {
@@ -29,18 +36,17 @@
   }
 }
 
-.header-list__item:hover{
-  a {
-    color: $bg-alt;
+.header-list__item__active{
+  span {
+  background: $bg-alt;
+  transition-duration: 0.5s;
   }
 }
 
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 1000px) {
   .header-list {
-    justify-content: flex-end;
-    gap: 40px;
-    left: 85px;
-    right: 85px;
+    max-width: 900px;
+    margin: auto;
   }
   .header-list__item {
     font-size: 18px;

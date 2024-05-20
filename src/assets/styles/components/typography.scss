@@ -10,7 +10,9 @@
   letter-spacing: 2px;
   font-size: 36px;
   line-height: auto;
-  color: $textColor-primary;
+  background: $bg-alt;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .mainTitle-secondary {
   font-family: $font-secondary;
@@ -43,8 +45,16 @@
   color: $textColor-secondary;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 18px;
+  word-spacing: 2px;
+}
+
+.body_important {
+  font-family: $font-primary;
+  color: $textColor-secondary;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
   word-spacing: 2px;
 }
 

@@ -8,9 +8,9 @@ import Contacme from "../components/layout/Contacme";
 import Header from "../components/layout/Header";
 import { actionButton } from "../helpers/analytics";
 import Square from "../components/lazy/Square";
-import Learning from "../components/Learning";
+import TechStack from "../components/TechStack";
 
-import profile from "../assets/imgs/brand/profile.jpg";
+import profile from "../assets/imgs/brand/profile.jpeg";
 import Button from "../components/Button";
 import { Download } from "react-ionicons";
 
@@ -31,23 +31,21 @@ const About = () => {
         </Suspense>
         <div>
           <h2 className="txt mainTitle-secondary">Rafael Vilomar</h2>
-          <h3 className="txt secondaryTitle">{`Designer & front-end developer`}</h3>
+          <h3 className="txt secondaryTitle">Software Engineer</h3>
           <p className="txt body">
-            {`Designer & Front-end Developer with experience of applications and web pages, creating responsive interfaces and improving the user experience.`}
+            Hello! I'm Rafael Vilomar, a dedicated Software Engineer with a passion for backend development. Over the years, I've honed my skills in various frameworks and tools, including NodeJS, Express, NestJS, Redis, MongoDB, and Spring Boot, among others. My expertise also extends to developing and maintaining microservices architectures, ensuring scalability, security, and efficiency.
           </p>
           <p className="txt body">
-            Love UI / UX design and create products using tools like: Figma,
-            ReactJS and React Native.
+            Currently, I work as a Senior Software Engineer at Stefanini with a high projects ownership for diverse clients.
           </p>
           <p className="txt body">
-            I'm also studying software engineering at UAPA, front-end technology
-            at Platzi, and challenging my skills in my free time.
+            On this website, I plan to show my knowledge through different side projects.
           </p>
           <Button
             icon={<Download />}
             title="Download CV"
             value="Download CV"
-            url="https://drive.google.com/file/d/1EjopcXAtDM_iHaUx1ZLX1HTxcbn5rY_-/view?usp=sharing"
+            url="https://drive.google.com/file/d/1zD5dIk9kFFaL_L5_ftexR7fUJ6ea4vkS/view?usp=sharing"
             externalURL
             onClick={() =>
               actionButton("Main button", 'Clik on button "Download CV"')
@@ -57,7 +55,7 @@ const About = () => {
       </section>
       <section className="listAbout">
         <ClientList />
-        <Learning />
+        <TechStack />
       </section>
       <Contacme />
     </>
